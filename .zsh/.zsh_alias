@@ -1,3 +1,15 @@
 alias e="nvim"
 
 alias youtube-dlmp3='youtube-dl --extract-audio --audio-format mp3'
+
+alias update='sudo pacman -Syu & pacaur -Syu'
+
+alias portfolio='cd ~/Documents/portfolio'
+
+alias txtConverter='soffice --headless --convert-to'
+
+alias batch-ytdl='youtube-dl -f best -a'
+
+alias vpsssh='ssh ekb@45.32.133.69'
+
+alias vpsping='ping 45.32.133.69'

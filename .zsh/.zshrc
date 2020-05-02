@@ -1,3 +1,4 @@
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.zsh/.zsh_history
 HISTSIZE=10000
@@ -7,10 +8,12 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 
-source $HOME/.zsh/.zsh_alias
+source ~/.zsh/.zsh_alias
+
+source /usr/share/nvm/init-nvm.sh
 
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
-zstyle :compinstall filename '/home/ekb/.zshrc'
+zstyle :compinstall filename '/home/ekb/.zshenv'
 
 autoload -Uz compinit
 compinit
