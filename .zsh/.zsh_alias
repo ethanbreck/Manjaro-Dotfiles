@@ -10,6 +10,6 @@ alias txtConverter='soffice --headless --convert-to'
 
 alias batch-ytdl='youtube-dl -f best -a'
 
-alias vpsssh='ssh ekb@45.32.133.69'
+alias vpsssh='ssh ekb@ServerIP'
 
-alias vpsping='ping 45.32.133.69'
+alias vpsping='ping ServerIP'
