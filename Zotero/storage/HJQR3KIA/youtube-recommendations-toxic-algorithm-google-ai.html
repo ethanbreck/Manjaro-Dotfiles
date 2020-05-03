@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<!--
+ _________   _______       ___     ___    ___      _____      _                  _      _ _
+|         | |        \    |   |   |   |  |   |    / ____|    | |                | |    | (_)
+|__     __| |    _    \   |   |   '   |  '   '   | |    _   _| |__   ___ _ __ __| | ___| |_  __ _
+   |   |    |   |  \   \  |   '_ /    '_/   /    | |   | | | | '_ \ / _ \ '__/ _` |/ _ \ | |/ _` |
+   |   |    |   |   |   | |         /      /     | |___| |_| | |_) |  __/ | | (_| |  __/ | | (_| |
+   '___'    '___'   '___' '_______ / '____/       \_____\__, |_.__/ \___|_|  \__,_|\___|_|_|\__,_|
+                                                         __/ |
+                                                        |___/
+Design by:
+——————————
+
+    ALEXANDER GRIFFIOEN
+   ✉alexander🐺thenextweb.com
+   ✎@oscaralexander
+   ✈Amsterdam, NL
+
+Implementation/Development by:
+——————————————————
+
+    RONAN O'LEARY           |  JAMES SCOTT      | JULIO FOULQUIÉ            | JULIAN AIJAL
+    ✉ronan🚀thenextweb.com  |  ✈Amsterdam, NL   | ✉julio🐼thenextweb.com    | ✉julian🍻thenextweb.com
+    ✎@ro_oleary             |                   | ✎@julioelpoeta            | ✎@jaijal ✈Amsterdam, NL
+    ✈Dublin, IE             |                   | ✈Montevideo, UY
+    ✈Amsterdam, NL
+
+Alumni:
+_______
+
+    LAURA GONZÁLEZ          |   PABLO ROMÁN             |   JAVIER NEGRE
+   ✎@freezydorito           |  ✎@pabloroman             |  ✎@javi_negre
+   ✈Oviedo, ES              |  ✈Amsterdam, NL           |  ✈Barcelona, ES
+
+    GORDAN KONDEV           
+   ✈Amsterdam, NL           
+
+🍺 Aren't you thirsty? Why don't you cyberdelia.knock() on the door? 🍻
+
+-->
+<html prefix="og:http://ogp.me/ns# fb:http://ogp.me/ns/fb#" itemscope="" itemtype="https://schema.org/" style="" class=" js no-touch js no-touch" lang="en-us"><head><script type="text/javascript" async="" src="https://www.google-analytics.com/gtm/js?id=GTM-KWW25VS&amp;t=primary&amp;cid=2108253086.1588497619&amp;aip=true"></script><script type="text/javascript" charset="utf-8" async="" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script type="text/javascript" charset="utf-8" async="" src="//ssl.p.jwpcdn.com/player/plugins/gapro/v/2.1.5/gapro.js"></script><script type="text/javascript" charset="utf-8" async="" src="//ssl.p.jwpcdn.com/player/v/8.13.8/jwpsrv.js"></script><script type="text/javascript" charset="utf-8" async="" src="//ssl.p.jwpcdn.com/player/plugins/bidding/v/0.3.7/bidding.js"></script><script type="text/javascript" charset="utf-8" async="" src="//ssl.p.jwpcdn.com/player/plugins/googima/v/8.7.15/googima.js"></script><script type="text/javascript" async="" src="https://ml314.com/tag.aspx?342020"></script><script type="text/javascript" async="" src="analytics.js"></script><script type="text/javascript" async="" src="analytics.js"></script><script type="text/javascript" async="" src="prebid_002.js"></script>
+
+<meta charset="UTF-8">
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width" name="viewport">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="referrer" content="unsafe-url">
+<meta name="apple-mobile-web-app-title" content="The Next Web">
+<meta name="msvalidate.01" content="EBA9DC0DD4E376AF9708F73323680AB1">
+<!-- Awin verification 001 -->
+<title>‘YouTube recommendations are toxic,’ says dev who worked on the algorithm</title>
+
+<link rel="manifest" href="https://thenextweb.com/manifest.json">
+
+<link rel="stylesheet" href="style.css" type="text/css">
+
+<link rel="dns-prefetch" href="https://cdn0.tnwcdn.com/">
+<link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+<link rel="preconnect" href="https://cdn0.tnwcdn.com/">
+<link rel="preconnect" href="https://www.googletagmanager.com/">
+<link rel="apple-touch-icon" sizes="57x57" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-57x57.png?v=1588342624">
+<link rel="apple-touch-icon" sizes="60x60" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-60x60.png?v=1588342624">
+<link rel="apple-touch-icon" sizes="72x72" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-72x72.png?v=1588342624">
+<link rel="apple-touch-icon" sizes="76x76" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-76x76.png?v=1588342624">
+<link rel="apple-touch-icon" sizes="114x114" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-114x114.png?v=1588342624">
+<link rel="apple-touch-icon" sizes="120x120" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-120x120.png?v=1588342624">
+<link rel="apple-touch-icon" sizes="144x144" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-144x144.png?v=1588342624">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-152x152.png?v=1588342624">
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-180x180.png?v=1588342624">
+<link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-32x32.png?v=1588342624" sizes="32x32">
+<link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-194x194.png?v=1588342624" sizes="194x194">
+<link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-96x96.png?v=1588342624" sizes="96x96">
+<link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/android-chrome-192x192.png?v=1588342624" sizes="192x192">
+<link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-16x16.png?v=1588342624" sizes="16x16">
+<link rel="shortcut icon" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon.png?v=1588342624">
+<link rel="alternate" type="application/rss+xml" title="The Next Web RSS Feed" href="https://feeds2.feedburner.com/thenextweb">
+<!--  WP_HEAD   -->
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v11.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Google is notoriously cryptic about how YouTube's recommendations work, that's why Guillaume Chaslot is fighting for increased transparency">
+<link rel="canonical" href="https://thenextweb.com/google/2019/06/14/youtube-recommendations-toxic-algorithm-google-ai/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="‘YouTube recommendations are toxic,’ says dev who worked on the algorithm">
+<meta property="og:description" content="Google is notoriously cryptic about how YouTube's recommendations work, that's why Guillaume Chaslot is fighting for increased transparency">
+<meta property="og:url" content="https://thenextweb.com/google/2019/06/14/youtube-recommendations-toxic-algorithm-google-ai/">
+<meta property="og:site_name" content="The Next Web">
+<meta property="article:publisher" content="https://www.facebook.com/thenextweb">
+<meta property="article:author" content="http://www.facebook.com/thenextweb">
+<meta property="article:published_time" content="2019-06-14T10:58:17+02:00">
+<meta property="article:modified_time" content="2019-06-14T12:08:03+02:00">
+<meta property="og:updated_time" content="2019-06-14T12:08:03+02:00">
+<meta property="og:image" content="https://img-cdn.tnwcdn.com/image/tnw?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F06%2FUntitled-design65.png&amp;signature=4e7b49f32182da669c0226e3fc440c8e">
+<meta property="og:image:secure_url" content="https://img-cdn.tnwcdn.com/image/tnw?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F06%2FUntitled-design65.png&amp;signature=4e7b49f32182da669c0226e3fc440c8e">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Google is notoriously cryptic about how YouTube's recommendations work, that's why Guillaume Chaslot is fighting for increased transparency">
+<meta name="twitter:title" content="‘YouTube recommendations are toxic,’ says dev who worked on the algorithm">
+<meta name="twitter:site" content="@thenextweb">
+<meta name="twitter:image" content="https://img-cdn.tnwcdn.com/image/tnw?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F06%2FUntitled-design65.png&amp;signature=4e7b49f32182da669c0226e3fc440c8e">
+<meta name="twitter:creator" content="@mm_maack">
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="The Next Web » ‘YouTube recommendations are toxic,’ says dev who worked on the algorithm Comments Feed" href="https://thenextweb.com/google/2019/06/14/youtube-recommendations-toxic-algorithm-google-ai/feed/">
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="elasticpress-facets-css" href="facets.css" type="text/css" media="all">
+<script async="" defer="defer" src="cmp.js"></script><script async="" src="gtm.js"></script><script async="" type="text/javascript" src="nativeEmbed.js" id="quantx-embed-tag"></script><script async="" type="text/javascript" src="gpt.js"></script><script async="" type="text/javascript" src="prebid.js"></script><script async="" type="text/javascript" id="faktorScript" src="faktor.js"></script><script async="" src="ping.js"></script><script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery-migrate.js"></script>
+<script type="text/javascript" src="wordlift-tnw-public.js"></script>
+<link rel="https://api.w.org/" href="https://thenextweb.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thenextweb.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://thenextweb.com/wp-includes/wlwmanifest.xml"> 
+<link rel="shortlink" href="https://thenextweb.com/?p=1212701">
+<link rel="alternate" type="application/json+oembed" href="https://thenextweb.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://thenextweb.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F&amp;format=xml">
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@id":"#Breadcrumb","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/thenextweb.com\/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"name":"Google","@id":"https:\/\/thenextweb.com\/google"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/thenextweb.com\/google\/2019\/06\/14\/youtube-recommendations-toxic-algorithm-google-ai\/","name":"\u2018YouTube recommendations are toxic,\u2019 says dev who worked on the algorithm"}}]}</script>
+        <!-- JSON-LD cached: yes-->
+        <script type="application/ld+json">[{"@context":"http:\/\/schema.org","@id":"http:\/\/data.thenextweb.com\/tnw\/post\/id\/1212701","@type":"NewsArticle","description":"Where else could you go for you daily dose of how-tos, like this one about draining washing machines, or 15-minute compilations of cats vomiting? This is what YouTube was made for, ...","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/thenextweb.com\/google\/2019\/06\/14\/youtube-recommendations-toxic-algorithm-google-ai\/","breadcrumb":{"@id":"#Breadcrumb"}},"image":{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2019\/06\/Untitled-design65.png","width":1200,"height":628},"headline":"\u2018YouTube recommendations are toxic,\u2019 says dev who worked on the algorithm","datePublished":"2019-06-14T10:58:17+00:00","dateModified":"2019-06-14T12:08:03+00:00","wordCount":1406,"publisher":{"@type":"Organization","@id":"http:\/\/data.thenextweb.com\/tnw\/entity\/the_next_web","name":"The Next Web","sameAs":["https:\/\/en.wikipedia.org\/wiki\/The_Next_Web","https:\/\/www.facebook.com\/thenextweb","https:\/\/www.twitter.com\/thenextweb","https:\/\/plus.google.com\/+TheNextWeb\/","https:\/\/instagram.com\/thenextweb","https:\/\/www.youtube.com\/user\/thenextweb","https:\/\/www.pinterest.com\/thenextweb\/","https:\/\/www.linkedin.com\/company\/the-next-web","https:\/\/vine.co\/thenextweb","https:\/\/thenextweb.tumblr.com","https:\/\/soundcloud.com\/thenextweb","https:\/\/vimeo.com\/thenextweb","https:\/\/vk.com\/thenextweb","https:\/\/www.slideshare.net\/thenextweb","https:\/\/flipboard.com\/@thenextweb","https:\/\/storify.com\/thenextweb","https:\/\/www.stumbleupon.com\/channel\/thenextweb","https:\/\/www.flickr.com\/photos\/thenextweb\/","https:\/\/foursquare.com\/thenextweb"],"logo":{"@type":"ImageObject","url":"https:\/\/cdn1.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2016\/06\/tnw-logo-amp.png","width":284,"height":60}},"about":[{"@id":"http:\/\/data.thenextweb.com\/tnw\/entity\/youtube"}],"mentions":[{"@id":"http:\/\/data.thenextweb.com\/tnw\/entity\/transparency_behavior"},{"@id":"http:\/\/data.thenextweb.com\/tnw\/entity\/google"},{"@id":"http:\/\/data.thenextweb.com\/tnw\/entity\/artificial_intelligence_video_games"}],"author":{"@type":"Person","@id":"http:\/\/data.thenextweb.com\/tnw\/user\/mar-maack","name":"M\u00e1r M\u00e1sson Maack","url":"https:\/\/thenextweb.com\/author\/mar-maack\/"},"articleSection":"Google","dateCreated":"2019-06-14T10:58:17+00:00","name":"\u2018YouTube recommendations are toxic,\u2019 says dev who worked on the algorithm","url":"https:\/\/thenextweb.com\/google\/2019\/06\/14\/youtube-recommendations-toxic-algorithm-google-ai\/","articleBody":"Where else could you go for you daily dose of how-tos, like this one about draining washing machines, or 15-minute compilations of cats vomiting? This is what YouTube was made for, and it\u2019s beautiful. \r\n\r\nAt the same time, as YouTube has become\u00a0the place for videos on the web, it\u2019s led to a raft of new problems. Content moderation is a constant struggle and YouTube can do better, but there will likely always be some amount of offensive videos that people can seek out. However, the real issue is the videos we don\u2019t seek out: YouTube\u2019s recommendations. \r\n[in-content-unit]\r\nRecommendations are a waste of time\r\nYou can see the recommendations in the \u201cUp next\u201d list on the right of the screen and they\u2019ll also play automatically when you\u2019ve got autoplay enabled. \r\n\r\nThese are the videos you should be wary of, according to Guillaume Chaslot. He's the founder of\u00a0a project to demand greater transparency from online platforms called AlgoTransparency, and used to work at Google on YouTube\u2019s recommendation algorithm. He says the motivations behind it are deeply flawed as it isn\u2019t really about what the viewer wants.\r\n\r\n[caption id=&quot;attachment_1212727&quot; align=&quot;aligncenter&quot; width=&quot;796&quot;] Chaslot speaking at the DisinfoLab Conference in Brussels[\/caption]\r\n\r\n\u201cIt isn\u2019t inherently awful that YouTube uses AI to recommend video for you, because if the AI is well tuned it can help you get what you want. This would be amazing,\u201d Chaslot told TNW. \u201cBut the problem is that the AI isn\u2019t built to help you get what you want -- it\u2019s built to get you addicted to YouTube. Recommendations were designed to waste your time.\u201d\r\n\r\nChaslot explains that the metric the algorithm uses to determine a \u2018successful\u2019 recommendations is watch time. This might be great for a company trying to sell ads, but doesn\u2019t necessarily reflect what the user wants -- and has grave side-effects. \r\nEngaging content gets recommended, which is bad\r\nDuring his talk at the DisinfoLab Conference last month, Chaslot noted that divisive and sensational content is often recommended widely: conspiracy theories, fake news, flat-Earther videos, for example. Basically, the closer it stays the edge of what's allowed under YouTube\u2019s policy, the more engagement it gets. Google completely disagrees with Chaslot, but we'll get to that later.\r\n\r\nThe basic structure of YouTube\u2019s recommendation algorithm might\u2019ve worked fine for its core types of content -- like cat videos, gaming, and music. But as YouTube becomes more central in people\u2019s information and news consumption, Chaslot worries recommendations will push people further to extremes -- whether they want it or not -- just because it\u2019s in YouTube\u2019s interest to keep us watching for as long as possible. \r\n\r\n[caption id=&quot;attachment_1212704&quot; align=&quot;aligncenter&quot; width=&quot;592&quot;] Chaslot\u2019s take on Facebook\u2019s natural engagement pattern: \u201cThe best way to use social media is to surf the policy line.\u201d[\/caption]\r\n\r\nMark Zuckerberg admitted last year that borderline content was more engaging. Google did not want to answer TNW\u2019s questions as to whether the same was true for YouTube, but the company\u2019s spokesperson said in a discussion at the DisinfoLab conference that the company's studies showed people actually engaged more with quality content. Chaslot says this is something the big tech companies will have to debate between themselves, but based on his own experience, he\u2019s more inclined to believe Zuckerberg at this point.\r\n\r\n\u201cWe\u2019ve got to realize that YouTube recommendations are toxic and it perverts civic discussion,\u201d says Chaslot. \u201cRight now the incentive is to create this type of borderline content that\u2019s very engaging, but not forbidden.\u201d Basically, the more outlandish content you make, the more likely it\u2019ll keep people watching, which in turn will make it more likely to be recommended by the algorithm -- which results in greater revenue for the creator, and for YouTube.\r\n\r\n\r\nBut what about actual, concrete examples of problematic recommendations? \r\nWhen recommendations go wrong\r\nIn Chaslot\u2019s mind, it should be enough to point out that the algorithm\u2019s incentives are completely broken (i.e. watch time doesn\u2019t equal quality) as an example of why it\u2019s bad for us as a society. But to actually show its effects, he made the AlgoTransparency tool after he left Google. The tool is meant to give people a better overview of what\u2019s actually being recommended on YouTube. \r\n\r\nBasically, it tries to find out which videos are shared by most channels to provide an overview you can\u2019t get through your personal browsing. Chaslot points out that most often, the top recommended videos are innocuous, but every now and again, problematic videos pop up.\r\n\r\n\r\nThis video funded by the Russian government was recommended more than half a million times from more than 236 different channels.https:\/\/t.co\/aRNUx2WIOm\r\n2\/\r\n\r\n\u2014 Guillaume Chaslot (@gchaslot) April 26, 2019\r\n\r\n\r\nWhen the Mueller report detailing whether there was any collusion between Russia and Donald Trump's presidential campaign was released, Chaslot noticed that the analysis recommended from the most channels was a video from RT -- a state-sponsored Russian propaganda outlet. \r\n\r\nThat means that if Chaslot is correct, YouTube\u2019s algorithm amplified a video explaining the finding on possible Russian collusion made by\u2026 Russia. The video upholds what could be considered a Kremlin-friendly narrative and slams mainstream media. Naturally, Chaslot\u2019s claim caught the attention of the media and was covered widely.\r\n\r\nChaslot says that while other Mueller-related videos got more total recommendations, the RT video stood out because it was recommended like crazy for two days and then nothing -- despite having relatively few views. \r\n\r\n\u201cIt was really strange to see this amount of channels that recommended this video, compared to how many views it had,\u201d says Chaslot \u201cThe weird thing is that nobody really understands why this happened.\u201d\r\n\r\nNow it's important to get Google's side of things. Google has completely disowned AlgoTransparency's methodology (which you can find here) and told TNW it doesn't accurately reflect how recommendations work -- which are based on surveys, likes, dislikes, and shares.\r\nAs with most assertions made by AlgoTransparency, we have been unable to reproduce the results here. We\u2019ve designed our systems to help ensure that content from more authoritative sources is surfaced prominently in search results and watch next recommendations in certain contexts, including when a viewer is watching news related content on YouTube.\r\nChaslot says that if there are discrepancies with his results, he'd love to know what they are. And the best way to do that, is for Google to simply share which videos YouTube is recommending to people. But the company hasn\u2019t revealed more information on the matter.\r\n\r\nChaslot also points out that it seems his methods manage to highlight similar faults in the algorithm as Google does. Earlier this year, a Google software engineer gave a talk about correcting biases in YouTube and one of the videos used as an example of that had been flagged by AlgoTransparency before. So something about his approach seems to be working, but we won't know until Google becomes more transparent about recommendations.\r\n\r\n[caption id=&quot;attachment_1212730&quot; align=&quot;aligncenter&quot; width=&quot;796&quot;] From AlgoTransparency's website, showing part of its methodology[\/caption]\r\nWhat should we do about it?\r\nYouTube doesn\u2019t really provide any options now for users to control the recommendations they receive. Sure you can block some channels, but Chaslot points out that the algorithm might still push you towards similar channels as you\u2019ve already \u201cshown interest\u201d in this type of content. So what can you do?\r\n\r\n\u201cThe best short-term solution is to simply delete the recommendation function. I really don\u2019t think it\u2019s useful at all to the user,\u201d Chaslot explains. \u201cIf YouTube wants to keep recommendations, it could stick to the curated ones done via email -- where humans make sure nothing crazy gets on there -- or just make them stick to channels you\u2019ve subscribed to.\u201d\r\n\r\nChaslot also acknowledges that most people -- himself included -- are too curious not to click borderline content, so he uses a Chrome extension called Nudge that removes addictive online features like Facebook\u2019s News feed and YouTube recommendations. \u201cI still click on stupid thing when I see them, so the best thing to is to just remove them.\u201d \r\n\r\n[caption id=&quot;attachment_1212800&quot; align=&quot;aligncenter&quot; width=&quot;640&quot;] Nudge removes all the addictive stuff from social media sites... which is pretty much everything.[\/caption]\r\n\r\nAll of this is just to treat the symptoms, not the cause. Chaslot believes the real focus needs to be on long term solutions. At the moment, users are fighting against supercomputers to try to protect their free will, but it\u2019s a losing battle with the current tools. \r\n\r\nThat\u2019s why Chaslot is convinced the only way forward is to provide proper transparency and give users real control: \u201cIn the long term, we need people to be in control of the AI, instead of AI controlling the users.\u201d","copyrightYear":"2016","sourceOrganization":{"@id":"http:\/\/data.thenextweb.com\/tnw\/entity\/the_next_web"},"copyrightHolder":{"@id":"http:\/\/data.thenextweb.com\/tnw\/entity\/the_next_web"},"interactionStatistic":[{"@type":"InteractionCounter","interactionService":{"@type":"Website","name":"Twitter","url":"http:\/\/www.twitter.com"},"interactionType":"https:\/\/schema.org\/ShareAction","userInteractionCount":0},{"@type":"InteractionCounter","interactionService":{"@type":"Website","name":"Facebook","url":"http:\/\/www.facebook.com"},"interactionType":"https:\/\/schema.org\/ShareAction","userInteractionCount":0},{"@type":"InteractionCounter","interactionService":{"@type":"Website","name":"Reddit","url":"https:\/\/www.reddit.com"},"interactionType":"https:\/\/schema.org\/ShareAction","userInteractionCount":0},{"@type":"InteractionCounter","interactionType":"https:\/\/schema.org\/CommentAction","userInteractionCount":"0"}]},{"@context":"http:\/\/schema.org","@id":"http:\/\/data.thenextweb.com\/tnw\/entity\/youtube","@type":"Thing","description":"YouTube is a web-based video streaming and sharing service, and social network. It launched in 2005 and quickly gained immense popularity, being bought by Google shortly after in 20006. Services have since been expanded to include live streaming.","mainEntityOfPage":"https:\/\/thenextweb.com\/vocabulary\/youtube-2\/","name":"YouTube","sameAs":["http:\/\/data.wordlift.io\/wl0257\/entity\/youtube","http:\/\/dbpedia.org\/resource\/YouTube","https:\/\/www.wikidata.org\/wiki\/Q866","https:\/\/g.co\/kg\/m\/09jcvs","http:\/\/data.wordlift.io\/wl0257\/entity\/youtube","http:\/\/dbpedia.org\/resource\/YouTube","https:\/\/www.wikidata.org\/wiki\/Q866","https:\/\/g.co\/kg\/m\/09jcvs"],"url":["https:\/\/thenextweb.com\/vocabulary\/youtube-2\/","https:\/\/www.youtube.com\/"]},{"@context":"http:\/\/schema.org","@id":"http:\/\/data.thenextweb.com\/tnw\/entity\/transparency_behavior","@type":"Thing","description":"Transparency, as used in science, engineering, business, the humanities and in a social context more generally, implies openness, communication, and accountability. Transparency is operating in such a way that it is easy for others to see what actions are performed.","mainEntityOfPage":"https:\/\/thenextweb.com\/vocabulary\/transparency-behavior\/","name":"Transparency (behavior)","alternateName":["transparency"],"sameAs":["http:\/\/yago-knowledge.org\/resource\/Transparency_(behavior)","http:\/\/rdf.freebase.com\/ns\/m.01z9hc","http:\/\/dbpedia.org\/resource\/Transparency_(behavior)"],"url":"https:\/\/thenextweb.com\/vocabulary\/transparency-behavior\/"},{"@context":"http:\/\/schema.org","@id":"http:\/\/data.thenextweb.com\/tnw\/entity\/google","@type":"Organization","description":"Our coverage of all things Google. Founded by Larry Page and Sergey Brin in 1998, Google has grown from a company built around a search engine to a business that offers everything from cloud computing, Android, smartphones, VR devices and more. To reflect that, in August 2015 Google changed its company structure and became a...","mainEntityOfPage":"https:\/\/thenextweb.com\/vocabulary\/google-2-2\/","image":[{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2017\/06\/abcgrab.jpg","width":1342,"height":721}],"name":"Google","sameAs":["http:\/\/data.wordlift.io\/wl0257\/entity\/google","http:\/\/rdf.freebase.com\/ns\/m.045c7b","http:\/\/yago-knowledge.org\/resource\/Google","http:\/\/dbpedia.org\/resource\/Google","http:\/\/data.wordlift.io\/wl0257\/entity\/google","http:\/\/rdf.freebase.com\/ns\/m.045c7b","http:\/\/yago-knowledge.org\/resource\/Google","http:\/\/dbpedia.org\/resource\/Google"],"url":["https:\/\/thenextweb.com\/vocabulary\/google-2-2\/","https:\/\/www.facebook.com\/google","https:\/\/twitter.com\/google"],"address":{"@type":"PostalAddress","addressLocality":"Mountain View","addressCountry":"United States "}},{"@context":"http:\/\/schema.org","@id":"http:\/\/data.thenextweb.com\/tnw\/entity\/artificial_intelligence_video_games","@type":"Thing","description":"In video games, artificial intelligence is used to produce the illusion of intelligence in the behavior of non-player characters (NPCs). The techniques used typically draw upon existing methods from the field of artificial intelligence (AI). However, the term game AI is often used to refer to a broad set of algorithms that also include techniques...","mainEntityOfPage":"https:\/\/thenextweb.com\/vocabulary\/artificial-intelligence-video-games\/","image":[{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/wl\/2018\/11\/Freeciv-2.1.0-beta3-sdl_slack11.0.png"}],"name":"Artificial intelligence (video games)","alternateName":["AI"],"sameAs":["http:\/\/rdf.freebase.com\/ns\/m.05k_gc","http:\/\/dbpedia.org\/resource\/Artificial_intelligence_(video_games)"],"url":"https:\/\/thenextweb.com\/vocabulary\/artificial-intelligence-video-games\/"}]</script>
+		<script>
+  (function (s,o,n,a,r,i,z,e) {s['StackSonarObject']=r;s[r]=s[r]||function(){
+  (s[r].q=s[r].q||[]).push(arguments)},s[r].l=1*new Date();i=o.createElement(n),
+  z=o.getElementsByTagName(n)[0];i.async=1;i.src=a;z.parentNode.insertBefore(i,z)
+  })(window,document,'script','https://www.stack-sonar.com/ping.js','stackSonar');
+
+  stackSonar('stack-connect-wp', "xbcLoqGe2L037SCrJ_Im4A");
+</script>
+<!--  WP_HEAD   -->
+
+<meta property="twitter:account_id" content="10876852">
+<meta property="fb:app_id" content="378011798897423">
+<link href="https://plus.google.com/115081025762845243709/" rel="publisher">
+<meta property="fb:pages" content="106976563522"><!-- TNW -->
+<meta property="fb:pages" content="136548879865026"><!-- TNW Conference -->
+<meta property="fb:pages" content="252857631761065"><!-- TNW NYC -->
+<meta property="fb:pages" content="665773266831844"><!-- Deals -->
+<meta name="yandex-verification" content="66df89eec58f9170">
+
+<meta property="bt:body" content="Where else could you go for you daily dose of how-tos, like this one about draining washing machines, or 15-minute compilations of cats vomiting? This is what YouTube was made for, and it’s beautiful. 
+
+At the same time, as YouTube has become&nbsp;the place for videos on the web, it’s led to a raft of new problems. Content moderation is a constant struggle and YouTube can do better, but there will likely always be some amount of offensive videos that people can seek out. However, the real issue is the videos we don’t seek out: YouTube’s recommendations. 
+[in-content-unit]
+Recommendations are a waste of time
+You can see the recommendations in the “Up next” list on the right of the screen and they’ll also play automatically when you’ve got autoplay enabled. 
+
+These are the videos you should be wary of, according to Guillaume Chaslot. He's the founder of&nbsp;a project to demand greater transparency from online platforms called AlgoTransparency, and used to work at Google on YouTube’s recommendation algorithm. He says the motivations behind it are deeply flawed as it isn’t really about what the viewer wants.
+
+[caption id=&quot;attachment_1212727&quot; align=&quot;aligncenter&quot; width=&quot;796&quot;] Chaslot speaking at the DisinfoLab Conference in Brussels[/caption]
+
+“It isn’t inherently awful that YouTube uses AI to recommend video for you, because if the AI is well tuned it can help you get what you want. This would be amazing,” Chaslot told TNW. “But the problem is that the AI isn’t built to help you get what you want -- it’s built to get you addicted to YouTube. Recommendations were designed to waste your time.”
+
+Chaslot explains that the metric the algorithm uses to determine a ‘successful’ recommendations is watch time. This might be great for a company trying to sell ads, but doesn’t necessarily reflect what the user wants -- and has grave side-effects. 
+Engaging content gets recommended, which is bad
+During his talk at the DisinfoLab Conference last month, Chaslot noted that divisive and sensational content is often recommended widely: conspiracy theories, fake news, flat-Earther videos, for example. Basically, the closer it stays the edge of what's allowed under YouTube’s policy, the more engagement it gets. Google completely disagrees with Chaslot, but we'll get to that later.
+
+The basic structure of YouTube’s recommendation algorithm might’ve worked fine for its core types of content -- like cat videos, gaming, and music. But as YouTube becomes more central in people’s information and news consumption, Chaslot worries recommendations will push people further to extremes -- whether they want it or not -- just because it’s in YouTube’s interest to keep us watching for as long as possible. 
+
+[caption id=&quot;attachment_1212704&quot; align=&quot;aligncenter&quot; width=&quot;592&quot;] Chaslot’s take on Facebook’s natural engagement pattern: “The best way to use social media is to surf the policy line.”[/caption]
+
+Mark Zuckerberg admitted last year that borderline content was more engaging. Google did not want to answer TNW’s questions as to whether the same was true for YouTube, but the company’s spokesperson said in a discussion at the DisinfoLab conference that the company's studies showed people actually engaged more with quality content. Chaslot says this is something the big tech companies will have to debate between themselves, but based on his own experience, he’s more inclined to believe Zuckerberg at this point.
+
+“We’ve got to realize that YouTube recommendations are toxic and it perverts civic discussion,” says Chaslot. “Right now the incentive is to create this type of borderline content that’s very engaging, but not forbidden.” Basically, the more outlandish content you make, the more likely it’ll keep people watching, which in turn will make it more likely to be recommended by the algorithm -- which results in greater revenue for the creator, and for YouTube.
+
+
+But what about actual, concrete examples of problematic recommendations? 
+When recommendations go wrong
+In Chaslot’s mind, it should be enough to point out that the algorithm’s incentives are completely broken (i.e. watch time doesn’t equal quality) as an example of why it’s bad for us as a society. But to actually show its effects, he made the AlgoTransparency tool after he left Google. The tool is meant to give people a better overview of what’s actually being recommended on YouTube. 
+
+Basically, it tries to find out which videos are shared by most channels to provide an overview you can’t get through your personal browsing. Chaslot points out that most often, the top recommended videos are innocuous, but every now and again, problematic videos pop up.
+
+
+This video funded by the Russian government was recommended more than half a million times from more than 236 different channels.https://t.co/aRNUx2WIOm
+2/
+
+— Guillaume Chaslot (@gchaslot) April 26, 2019
+
+
+When the Mueller report detailing whether there was any collusion between Russia and Donald Trump's presidential campaign was released, Chaslot noticed that the analysis recommended from the most channels was a video from RT -- a state-sponsored Russian propaganda outlet. 
+
+That means that if Chaslot is correct, YouTube’s algorithm amplified a video explaining the finding on possible Russian collusion made by… Russia. The video upholds what could be considered a Kremlin-friendly narrative and slams mainstream media. Naturally, Chaslot’s claim caught the attention of the media and was covered widely.
+
+Chaslot says that while other Mueller-related videos got more total recommendations, the RT video stood out because it was recommended like crazy for two days and then nothing -- despite having relatively few views. 
+
+“It was really strange to see this amount of channels that recommended this video, compared to how many views it had,” says Chaslot “The weird thing is that nobody really understands why this happened.”
+
+Now it's important to get Google's side of things. Google has completely disowned AlgoTransparency's methodology (which you can find here) and told TNW it doesn't accurately reflect how recommendations work -- which are based on surveys, likes, dislikes, and shares.
+As with most assertions made by AlgoTransparency, we have been unable to reproduce the results here. We’ve designed our systems to help ensure that content from more authoritative sources is surfaced prominently in search results and watch next recommendations in certain contexts, including when a viewer is watching news related content on YouTube.
+Chaslot says that if there are discrepancies with his results, he'd love to know what they are. And the best way to do that, is for Google to simply share which videos YouTube is recommending to people. But the company hasn’t revealed more information on the matter.
+
+Chaslot also points out that it seems his methods manage to highlight similar faults in the algorithm as Google does. Earlier this year, a Google software engineer gave a talk about correcting biases in YouTube and one of the videos used as an example of that had been flagged by AlgoTransparency before. So something about his approach seems to be working, but we won't know until Google becomes more transparent about recommendations.
+
+[caption id=&quot;attachment_1212730&quot; align=&quot;aligncenter&quot; width=&quot;796&quot;] From AlgoTransparency's website, showing part of its methodology[/caption]
+What should we do about it?
+YouTube doesn’t really provide any options now for users to control the recommendations they receive. Sure you can block some channels, but Chaslot points out that the algorithm might still push you towards similar channels as you’ve already “shown interest” in this type of content. So what can you do?
+
+“The best short-term solution is to simply delete the recommendation function. I really don’t think it’s useful at all to the user,” Chaslot explains. “If YouTube wants to keep recommendations, it could stick to the curated ones done via email -- where humans make sure nothing crazy gets on there -- or just make them stick to channels you’ve subscribed to.”
+
+Chaslot also acknowledges that most people -- himself included -- are too curious not to click borderline content, so he uses a Chrome extension called Nudge that removes addictive online features like Facebook’s News feed and YouTube recommendations. “I still click on stupid thing when I see them, so the best thing to is to just remove them.” 
+
+[caption id=&quot;attachment_1212800&quot; align=&quot;aligncenter&quot; width=&quot;640&quot;] Nudge removes all the addictive stuff from social media sites... which is pretty much everything.[/caption]
+
+All of this is just to treat the symptoms, not the cause. Chaslot believes the real focus needs to be on long term solutions. At the moment, users are fighting against supercomputers to try to protect their free will, but it’s a losing battle with the current tools. 
+
+That’s why Chaslot is convinced the only way forward is to provide proper transparency and give users real control: “In the long term, we need people to be in control of the AI, instead of AI controlling the users.”">
+<meta name="author" content="Már Másson Maack">
+
+
+<script type="text/javascript">
+    var msTag = {"site":"tnw","page":"article","cyberdelia_page_type":"article","data":{"postId":1212701,"category":"Google,Social Media","section":"Tech","topic":"YouTube","sponsorName":null,"isSponsoredPost":"No","isSponsoredCategory":"No"}}</script>
+<script src="tnw_adtech_setup.js"></script>
+<script type="text/javascript">
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+
+	window.dataLayer = window.dataLayer || [];
+</script>
+
+ <script type="text/javascript">
+
+    var IS_MOBILE = false;
+    var APP_LOCALE = {"country":"US","region":"NA","city":""};
+    dataLayer.push({
+        'location': [
+            APP_LOCALE
+        ]
+    });
+</script>
+ 
+<!-- DataLayer -->
+    <script type="text/javascript">dataLayer.push({"version":"4 \/ 4.9.8","page":[{"template":"article","ads":[{"siteskin":0,"sponsored":0}]}],"user":[{"shares":[{"fb":0,"tw":0,"li":0,"go":0,"re":0}]}]});</script>
+    <script type="text/javascript">dataLayer.push({"page":[{"id":1212701,"url":"https:\/\/thenextweb.com\/google\/2019\/06\/14\/youtube-recommendations-toxic-algorithm-google-ai\/","words":2833,"time":"10:58 am","column":0,"fyi":0,"author":"M\u00e1r M\u00e1sson Maack","date":"2019-06-14","date_published":"2019-06-14 10-58","date_published_week":"2019-24","type":"Article","post-status":"publish","videos":0,"tags":[],"categories":["Google","Social Media"],"sections":["Tech"],"companies":[],"profiles":[],"events":[],"topics":["YouTube"],"wordlift":["YouTube","Transparency (behavior)","Google","Artificial intelligence (video games)"],"comments":"0","social_title":"\u2018YouTube recommendations are toxic,\u2019 says dev who worked on the algorithm","shares":{"fb":0,"tw":0,"li":0,"go":0,"re":0},"ads":{"roadblocked":0,"sponsor":"","sponsoredCategory":false,"sponsored":false,"client":null,"campaign_name":null,"product_type":null}}]});</script>
+
+<!-- Google Tag Manager -->
+<script>
+	(function (w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start': new Date().getTime(), event: 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src =
+			'//www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-MHDDSC');
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager -->
+<noscript>
+	<iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-MHDDSC" style="display: none; visibility: hidden;" width="0"></iframe>
+</noscript>
+<!-- End Google Tag Manager -->
+    <link rel="next" href="https://thenextweb.com/shareables/2020/05/01/japanese-aquarium-facetime-frightened-eels/">
+    <script>
+    !function(n,e,o,r,i){if(!e){e=e||{},window.permutive=e,e.q=[],e.config=i||{},e.config.projectId=o,e.config.apiKey=r,e.config.environment=e.config.environment||"production";for(var t=["addon","identify","track","trigger","query","segment","segments","ready","on","once","user","consent"],c=0;c<t.length;c++){var f=t[c];e[f]=function(n){return function(){var o=Array.prototype.slice.call(arguments,0);e.q.push({functionName:n,arguments:o})}}(f)}}}(document,window.permutive,"970c370e-66b5-4cc7-ad17-1d370e11bf75","d6c42980-42e9-4537-93f1-f2c3fd326c4a",{});  
+    window.googletag=window.googletag||{},window.googletag.cmd=window.googletag.cmd||[],window.googletag.cmd.push(function(){if(0===window.googletag.pubads().getTargeting("permutive").length){var g=window.localStorage.getItem("_pdfps");window.googletag.pubads().setTargeting("permutive",g?JSON.parse(g):[])}});
+
+    permutive.addon('web', {"page":{"type":"article","article":{"id":"1212701","title":"\u2018YouTube recommendations are toxic,\u2019 says dev who worked on the algorithm","description":"Where else could you go for you daily dose of how-tos, like this one about draining washing machines, or 15-minute compilations of cats vomiting? This is what YouTube was made for, ...","topic":"YouTube","authors":["M\u00e1r M\u00e1sson Maack"],"categories":["Google","Social Media"],"sections":["Tech"],"keywords":["YouTube","Transparency (behavior)","Google","Artificial intelligence (video games)"],"modifiedAt":"2019-06-14T12:08:03+02:00","publishedAt":"2019-06-14T10:58:17+02:00","type":"Article","companies":[],"profiles":[],"events":[],"sponsored":{"isSponsored":false,"client":null,"campaign":null},"wordlift":["YouTube","Transparency (behavior)","Google","Artificial intelligence (video games)"],"syndicated":false,"roadblockedAds":false,"shares":{"facebook":0,"twitter":0,"linkedIn":0,"googlePlus":0,"reddit":0},"countComments":0,"countImages":0,"countVideos":0,"lengthBucket":""}}})
+    </script>
+    <script async="" src="970c370e-66b5-4cc7-ad17-1d370e11bf75-web.js"></script>
+<script>
+/* Modernizr 2.8.3 (Custom Build) | MIT & BSD
+ * Build: http://modernizr.com/download/#-touch-cssclasses-teststyles-prefixes
+ */
+;window.Modernizr=function(a,b,c){function w(a){j.cssText=a}function x(a,b){return w(m.join(a+";")+(b||""))}function y(a,b){return typeof a===b}function z(a,b){return!!~(""+a).indexOf(b)}function A(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:y(f,"function")?f.bind(d||b):f}return!1}var d="2.8.3",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k,l={}.toString,m=" -webkit- -moz- -o- -ms- ".split(" "),n={},o={},p={},q=[],r=q.slice,s,t=function(a,c,d,e){var f,i,j,k,l=b.createElement("div"),m=b.body,n=m||b.createElement("body");if(parseInt(d,10))while(d--)j=b.createElement("div"),j.id=e?e[d]:h+(d+1),l.appendChild(j);return f=["&#173;",'<style id="s',h,'">',a,"</style>"].join(""),l.id=h,(m?l:n).innerHTML+=f,n.appendChild(l),m||(n.style.background="",n.style.overflow="hidden",k=g.style.overflow,g.style.overflow="hidden",g.appendChild(n)),i=c(l,a),m?l.parentNode.removeChild(l):(n.parentNode.removeChild(n),g.style.overflow=k),!!i},u={}.hasOwnProperty,v;!y(u,"undefined")&&!y(u.call,"undefined")?v=function(a,b){return u.call(a,b)}:v=function(a,b){return b in a&&y(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=r.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(r.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(r.call(arguments)))};return e}),n.touch=function(){var c;return"ontouchstart"in a||a.DocumentTouch&&b instanceof DocumentTouch?c=!0:t(["@media (",m.join("touch-enabled),("),h,")","{#modernizr{top:9px;position:absolute}}"].join(""),function(a){c=a.offsetTop===9}),c};for(var B in n)v(n,B)&&(s=B.toLowerCase(),e[s]=n[B](),q.push((e[s]?"":"no-")+s));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)v(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof f!="undefined"&&f&&(g.className+=" "+(b?"":"no-")+a),e[a]=b}return e},w(""),i=k=null,e._version=d,e._prefixes=m,e.testStyles=t,g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+q.join(" "):""),e}(this,this.document);
+</script>
+<link rel="preload" href="integrator.js" as="script"><script type="text/javascript" src="integrator.js"></script><script src="pubads_impl_2020042301.js" async=""></script><script src="wp-emoji-release.js" type="text/javascript" defer="defer"></script><script type="text/javascript" async="" src="pconfig.js"></script><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><script charset="utf-8" src="//ssl.p.jwpcdn.com/player/v/8.13.8/jwplayer.core.controls.js"></script><script charset="utf-8" src="https://platform.twitter.com/js/button.93a0c25c2d2f3081c705c98c2d9dec0e.js"></script><script charset="utf-8" src="https://platform.twitter.com/js/moment~timeline~tweet.99ce5e0e4617985354c5c426d7e1b9f4.js"></script><script charset="utf-8" src="https://platform.twitter.com/js/tweet.9aa9eda3c163ec539c16aef0d822d807.js"></script><script charset="utf-8" src="//ssl.p.jwpcdn.com/player/v/8.13.8/provider.hlsjs.js"></script><style type="text/css">@keyframes expand { from { transform: scale(0); opacity: 0; } }</style><style media="screen">.jw-plugin-googima,.jw-plugin-googima.jw-ad-instream .jw-ads-view>:not(div),.jw-plugin-googima.jw-ad-instream .jw-ads-view>div:not(:empty){height:100%;width:100%}.jw-plugin-googima{overflow:hidden;display:block;visibility:hidden;pointer-events:none;opacity:0}.jw-plugin-googima.jw-ad-instream{visibility:visible;display:block;pointer-events:all;opacity:1}.jw-plugin-googima.jw-ad-linear{top:0;left:0;bottom:0}.jw-plugin-googima.jw-ad-non-linear{top:auto}.jw-plugin-googima .jw-ads-view{position:absolute;width:100%;height:100%}.jwplayer.jw-flag-ads-googleima.jw-flag-touch .jw-controlbar{font-size:1em}.jwplayer.jw-flag-ads-googleima.jw-flag-touch .jw-display-icon-display,.jwplayer.jw-flag-ads-googleima.jw-flag-touch .jw-display-icon-display .jw-icon-display{pointer-events:none}.jwplayer.jw-flag-ads-googleima .jw-controlbar{background:0 0!important;pointer-events:none}.jwplayer.jw-flag-ads-googleima .jw-controlbar .jw-icon{pointer-events:all}.jwplayer.jw-flag-ads-googleima .jw-controls-backdrop{display:none}.jwplayer.jw-flag-ads-googleima.jw-ie .jw-slider-volume,.jwplayer.jw-flag-ads-googleima.jw-ie .jw-svg-icon{background:rgba(0,0,0,.25);border-radius:3px}.jwplayer.jw-flag-ads-googleima.jw-ie .jw-slider-volume{margin:0 10px}@supports (filter:drop-shadow(0 0 3px #000)){.jwplayer.jw-flag-ads-googleima.jw-ie .jw-slider-volume,.jwplayer.jw-flag-ads-googleima.jw-ie .jw-svg-icon{background:0 0;border-radius:0}.jwplayer.jw-flag-ads-googleima.jw-ie .jw-slider-volume{margin:0}}.jwplayer.jw-flag-ads-googleima .jw-controlbar .jw-svg-icon{fill:#fff;filter:drop-shadow(0 0 3px #000)}.jwplayer.jw-flag-ads-googleima .jw-spacer,.jwplayer.jw-flag-ads-googleima .jw-text{order:1}.jwplayer.jw-flag-ads-googleima .jw-controlbar .jw-text{text-shadow:0 0 3px #000}.jwplayer.jw-flag-ads-googleima.jw-flag-small-player.jw-flag-ads.jw-state-playing.jw-flag-touch:not(.jw-flag-ads-vpaid) .jw-controls .jw-controlbar{pointer-events:none}.jwplayer.jw-flag-ads-googleima.jw-flag-small-player .jw-controlbar{flex-flow:column-reverse nowrap;height:100%;max-height:none}.jwplayer.jw-flag-ads-googleima.jw-flag-small-player .jw-button-container{align-items:flex-end;flex-wrap:wrap;margin-bottom:7px}.jwplayer.jw-flag-ads-googleima.jw-flag-small-player .jw-controlbar .jw-icon{height:30px}.jwplayer.jw-flag-ads-googleima.jw-flag-small-player .jw-text{align-self:flex-start;margin:16px 0 0 16px;order:-1;width:100%}</style></head>
+
+    <body class="is-article is-branded-channel  with-nav-message">
+        
+<nav class="nav">
+    <div class="nav-logo">
+        <a href="https://thenextweb.com/" title="The Next Web" data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">
+            <img alt="The Next Web" src="tnw.svg">
+        </a>
+        <ul class="nav-logo-popout">
+            <li><a class="is-active" href="https://thenextweb.com/" data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">News</a></li>
+            <li><a href="https://thenextweb.com/conference/" ref="" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Conference" data-event-non-interaction="true">Events</a>
+            </li>
+            <li><a href="https://index.co/" rel="noopener" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Index" data-event-non-interaction="true">Index</a>
+            </li>
+            <li><a href="https://thenextweb.com/spaces" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Spaces" data-event-non-interaction="true">Spaces</a></li>
+            <li><a href="https://deals.thenextweb.com/?utm_source=thenextweb.com&amp;utm_medium=referral&amp;utm_campaign=navbar" rel="noopener" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Deals" data-event-non-interaction="true">Deals</a>
+            </li>
+            <li><a href="https://answers.thenextweb.com/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Answers" data-event-non-interaction="true">Answers</a>
+            </li>
+            <li><a href="https://thenextweb.com/x/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="TNW X" data-event-non-interaction="true">TNW X</a>
+            </li>
+        </ul>
+    </div>
+    <ul class="nav-tnw" role="navigation">
+        <li><a class="is-active" href="https://thenextweb.com/" data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">News</a></li>
+        <li><a href="https://thenextweb.com/conference/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Conference" data-event-non-interaction="true">Events▾</a>
+            <ul class="nav-tnw-dropdown-menu">
+                <li>
+                    <a href="https://thenextweb.com/events/rebrand">Online Event: Re:Brand</a>
+                </li>
+                <li>
+                    <a href="https://thenextweb.com/events/sprint">Online Event: Sprint</a>
+                </li>
+                <li>
+                    <a href="https://thenextweb.com/events/checkout">Online Event: Checkout</a>
+                </li>
+                <li>
+                    <a href="https://thenextweb.com/events/ecosystems">Online Event: Ecosystems</a>
+                </li>
+                <li>
+                    <a href="https://thenextweb.com/events/transform">Online Event: Transform</a>
+                </li>
+                <li>
+                    <a href="https://thenextweb.com/conference/">TNW2020</a>
+                </li>
+
+            </ul>
+        </li>
+        <li><a href="https://index.co/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Business" data-event-non-interaction="true">Business
+                ▾</a>
+            <ul class="nav-tnw-dropdown-menu">
+                <li>
+                    <a href="https://index.co/">Index</a>
+                </li>
+                <li>
+                    <a href="https://thenextweb.com/x/">TNW X</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="https://answers.thenextweb.com/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Answers" data-event-non-interaction="true">AMAs</a></li>
+        <li><a href="https://thenextweb.com/spaces" rel="noopener" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Spaces" data-event-non-interaction="true">Spaces</a></li>
+        <li><a href="https://thenextweb.com/terms-and-conditions/" rel="noopener" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Terms and Conditions" data-event-non-interaction="true">Terms
+                &amp; Conditions</a></li>
+        <div class="nav-company">
+            <li><a href="https://thenextweb.com/about" data-event-category="Top" data-event-action="Navigation" data-event-label="About" data-event-non-interaction="true">About</a>
+            </li>
+            <li><a href="https://thenextweb.com/advertise" data-event-category="Top" data-event-action="Navigation" data-event-label="Advertise" data-event-non-interaction="true">Advertise</a>
+            </li>
+            <li><a href="https://thenextweb.homerun.co/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Jobs" data-event-non-interaction="true">Jobs</a></li>
+            <li><a href="https://thenextweb.com/about/#contact" data-event-category="Top" data-event-action="Navigation" data-event-label="Contact" data-event-non-interaction="true">Contact</a>
+            </li>
+        </div>
+    </ul>
+    <div class="u-clear" role="navigation">
+
+                    <ul class="nav-sections">
+        <li class="nav-sections-section"><a href="https://thenextweb.com/latest" data-event-category="Top" data-event-action="Channels" data-event-label="Latest" data-event-non-interaction="true">Latest</a></li>
+        <li class="nav-sections-section"><a href="https://thenextweb.com/hardfork" data-event-category="Top" data-event-action="Channels" data-event-label="Hard Fork" data-event-non-interaction="true">Hard Fork</a></li>
+        <li class="nav-sections-section"><a href="https://thenextweb.com/plugged" data-event-category="Top" data-event-action="Channels" data-event-label="Plugged" data-event-non-interaction="true">Plugged</a></li>
+        <li class="nav-sections-section"><a href="https://thenextweb.com/adobe-fundamentals" data-event-category="Top" data-event-action="Channels" data-event-label="Fundamentals" data-event-non-interaction="true">Fundamentals</a></li>
+        <li class="nav-sections-section"><a href="https://thenextweb.com/readme" data-event-category="Top" data-event-action="Channels" data-event-label="ReadMe" data-event-non-interaction="true">ReadMe</a></li>
+        <li class="nav-sections-section"><a href="https://thenextweb.com/growth-quarters" data-event-category="Top" data-event-action="Channels" data-event-label="Growth Quarters" data-event-non-interaction="true">Growth Quarters</a></li>
+        <li class="nav-sections-section"><a href="https://thenextweb.com/neural" data-event-category="Top" data-event-action="Channels" data-event-label="Neural" data-event-non-interaction="true">Neural</a></li>
+    </ul>
+                                
+        <ul class="nav-icons">
+            <li class="cookieConsent">
+                <a href="#"><i class="icon icon--cookie"></i></a>
+                <div class="cookieConsent-popOut">
+                    <header>
+                        <h2>Have a cookie</h2>
+                    </header>
+                    <main>
+                        <p>
+                            TNW uses cookies to personalize content and ads to
+                            make our site easier for you to use.
+                            We do also share that information with third parties for
+                            advertising &amp; analytics.
+                        </p>
+                    </main>
+                    <footer>
+                        <a class="button button--small" onclick="cookiesAccepted();" data-event-category="Top" data-event-action="Cookies" data-event-label="OK" data-event-non-interaction="true">Got
+                            it!</a>
+                        <span>
+                            or <a href="https://thenextweb.com/cookie-statement/" data-event-category="Top" data-event-action="Cookies" data-event-label="More information" data-event-non-interaction="true">More
+                                info</a>
+                        </span>
+                    </footer>
+                </div>
+            </li>
+            <li><a id="search--open" href="#"><i class="icon icon--search--dark"></i></a>
+                <!--
+                <li><a href="#"><i class="icon icon--user--dark"></i></a>
+                -->
+            </li><li>
+                <a class="nav-mob-toggle" id="nav-mob-toggle" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+        <!--
+        <ul class="nav-follow">
+            <li><a  data-event-category="Top" data-event-action="Social" data-event-label="Facebook" data-event-non-interaction="true" href="https://www.facebook.com/thenextweb" title="Follow us on Facebook" target="_blank"  rel="noopener"><i class="icon icon--facebook--dark"></i></a>
+            <li><a  data-event-category="Top" data-event-action="Social" data-event-label="Twitter" data-event-non-interaction="true" href="https://www.twitter.com/thenextweb" title="Follow us on Twitter" target="_blank"  rel="noopener"><i class="icon icon--twitter--dark"></i></a>
+            <li class="nav-follow-extra">
+                <ul>
+                    <li><a href="https://plus.google.com/+TheNextWeb" title="Follow us on Google+" target="_blank"  rel="noopener"  data-event-category="Top" data-event-action="Social" data-event-label="Google+" data-event-non-interaction="true"><i class="icon icon--google--dark"></i></a>
+                    <li><a href="https://www.linkedin.com/company/the-next-web" title="Follow us on LinkedIn"  rel="noopener" target="_blank"  data-event-category="Top" data-event-action="Social" data-event-label="LinkedIn" data-event-non-interaction="true"><i class="icon icon--linkedin--dark"></i></a>
+                    <li><a href="https://www.youtube.com/user/thenextweb" title="Watch our videos on YouTube"  rel="noopener" target="_blank"  data-event-category="Top" data-event-action="Social" data-event-label="YouTube" data-event-non-interaction="true"><i class="icon icon--youtube--dark"></i></a>
+                    <li><a href="https://instagram.com/thenextweb" title="Follow us on Instagram" target="_blank"  rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Instagram" data-event-non-interaction="true"><i class="icon icon--instagram--dark"></i></a>
+                    <li><a href="http://pinterest.com/thenextweb/" title="Follow us on Pinterest" target="_blank"  rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Pinterest" data-event-non-interaction="true"><i class="icon icon--pinterest--dark"></i></a>
+                    <li><a href="http://feeds2.feedburner.com/thenextweb" title="Read our RSS feed" target="_blank"  rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="RSS" data-event-non-interaction="true"><i class="icon icon--rss--dark"></i></a>
+                </ul>
+            </li>
+            <li><a data-modal="modalStayTuned" href="#"><i class="icon icon--mail--dark"></i></a>
+            <li class="nav-follow-more nav-follow-toggle"><a href="#"><i class="icon icon--more--dark"></i></a>
+            <li class="nav-follow-less nav-follow-toggle"><a href="#"><i class="icon icon--close"></i></a>
+        </ul>
+        -->
+
+    </div>
+
+    <div class="nav-mob">
+        <div class="nav-mob-content">
+            <ul class="nav-mob-follow">
+                <li><a data-modal="modalStayTuned" href="#"><i class="icon icon--mail--light"></i></a>
+                    </li><li><a href="https://www.facebook.com/thenextweb" title="Follow us on Facebook" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Facebook" data-event-non-interaction="true"><i class="icon icon--facebook--light"></i></a></li><li><a href="https://twitter.com/thenextweb" title="Follow us on Twitter" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Twitter" data-event-non-interaction="true"><i class="icon icon--twitter--light"></i></a></li><li><a href="https://www.linkedin.com/company/the-next-web" title="Follow us on LinkedIn" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="LinkedIn" data-event-non-interaction="true"><i class="icon icon--linkedin--light"></i></a></li><li><a href="https://www.youtube.com/user/thenextweb" title="Watch our videos on YouTube" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="YouTube" data-event-non-interaction="true"><i class="icon icon--youtube--light"></i></a></li><li><a href="https://pinterest.com/thenextweb" title="Follow us on Pinterest" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Pinterest" data-event-non-interaction="true"><i class="icon icon--pinterest--light"></i></a></li><li><a href="https://instagram.com/thenextweb" title="Follow us on Instagram" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Instagram" data-event-non-interaction="true"><i class="icon icon--instagram--light"></i></a></li><li><a href="https://feeds2.feedburner.com/thenextweb" title="Read our RSS feed" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="RSS Feed" data-event-non-interaction="true"><i class="icon icon--rss--light"></i></a></li>            </ul>
+            <div class="u-row">
+                <div class="u-col-xs-6">
+                    <h5>Sections</h5>
+                    <ul class="nav-mob-menu">
+                        <li><a href="https://thenextweb.com/latest" data-event-category="Top" data-event-action="Sections" data-event-label="Latest" data-event-non-interaction="true">Latest</a>
+                        </li>
+                        <li><a href="https://thenextweb.com/section/insights" data-event-category="Top" data-event-action="Sections" data-event-label="Insights" data-event-non-interaction="true">Insights</a>
+                        </li>
+                        <li><a href="https://thenextweb.com/plugged/" data-event-category="Top" data-event-action="Sections" data-event-label="Plugged" data-event-non-interaction="true">Plugged</a>
+                        </li>
+                        <li><a href="https://thenextweb.com/adobe-fundamentals/" data-event-category="Top" data-event-action="Sections" data-event-label="Fundamentals" data-event-non-interaction="true">Fundamentals</a>
+                        </li>
+                        <!--li><a href="/iot-lab/" >IoT Lab</a></li-->
+                        <li><a href="https://thenextweb.com/readme/" data-event-category="Top" data-event-action="Sections" data-event-label="ReadMe" data-event-non-interaction="true">ReadMe</a>
+                        </li>
+                        <li><a href="https://thenextweb.com/growth-quarters/" data-event-category="Top" data-event-action="Sections" data-event-label="Growth Quarters" data-event-non-interaction="true">Growth
+                                Quarters</a></li>
+                        <li><a href="https://thenextweb.com/neural/" data-event-category="Top" data-event-action="Sections" data-event-label="Neural" data-event-non-interaction="true">Neural</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="u-col-xs-6">
+                    <h5>About TNW</h5>
+                    <ul class="nav-mob-menu">
+                        <li><a href="https://thenextweb.com/about" data-event-category="Top" data-event-action="Navigation" data-event-label="About" data-event-non-interaction="true">About</a></li><li><a href="https://tnwads.typeform.com/to/ofLLXt" data-event-category="Top" data-event-action="Navigation" data-event-label="Advertise" data-event-non-interaction="true">Advertise</a></li><li><a href="https://thenextweb.com/jobs" data-event-category="Top" data-event-action="Navigation" data-event-label="Jobs" data-event-non-interaction="true">Jobs</a></li><li><a href="https://thenextweb.com/about#contact" data-event-category="Top" data-event-action="Navigation" data-event-label="Contact" data-event-non-interaction="true">Contact</a></li><li><a href="https://thenextweb.com/terms-and-conditions/" data-event-category="Top" data-event-action="Navigation" data-event-label="Terms &amp; Conditions" data-event-non-interaction="true">Terms &amp; Conditions</a></li>                    </ul>
+                    <h5>TNW Sites</h5>
+                    <ul class="nav-mob-menu">
+                        <li><a href="https://thenextweb.com/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">News</a></li><li><a href="https://thenextweb.com/conference/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="TNW 2020" data-event-non-interaction="true">TNW 2020</a></li><li><a href="https://thenextweb.com/x/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="TNW X" data-event-non-interaction="true">TNW X</a></li><li><a href="https://index.co/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Index" data-event-non-interaction="true">Index</a></li><li><a href="https://thenextweb.com/spaces/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Spaces" data-event-non-interaction="true">Spaces</a></li><li><a href="https://deals.thenextweb.com/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Deals" data-event-non-interaction="true">Deals</a></li><li><a href="https://answers.thenextweb.com/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Answers" data-event-non-interaction="true">Answers</a></li>                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a data-event-category="Top" data-event-action="Announcement bar" data-event-label="Navigate the new normal for your industry at TNW&nbsp;Couch Conferences" href="https://thenextweb.com/events/" target="_blank" rel="noopener">
+	<div class="nav-message nav-message-announcement" style="pointer-events:none">
+			Navigate the new normal for your industry at TNW&nbsp;Couch Conferences	</div>
+</a>
+
+</nav>        <main class="main">
+
+<section class="channelHero">
+    <a href="" data-event-category="Category" data-event-action="google" data-event-label="" class="channel-hero-link" target="_blank">
+        <div class="wrapper">
+            <div class="channel-left-cta"></div>
+            <div class="channel-right-cta"></div>
+            <div class="channel-inner-cta"></div>
+        </div>
+    </a>
+</section>
+
+        <div class="tnw-ad ad-unit-TNW_ROS_HEADER" id="TNW_ROS_HEADER_1212701" data-ad-block-id="TNW_ROS_HEADER">
+        <!-- TNW_ROS_HEADER-->
+    </div>
+
+    <div class="sheet " id="sheet-1212701">
+        
+        <div class="wrapper">
+            <div class="split">
+                <div class="content">
+                    <article class="post">
+                        
+<header class="post-header">
+    <h1 class="u-m-0_25">‘YouTube recommendations are toxic,’ says dev who worked on the algorithm</h1>
+    <div class="post-byline u-m-1_5">
+        <a data-event-category="Article" data-event-action="Author - Már Másson Maack" data-event-label="Profile" data-event-non-interaction="true" class="lazy post-authorPhoto" data-src="https://secure.gravatar.com/avatar/1ab122a22a516152e2da48ebe863f153?s=64&amp;d=blank&amp;r=g" data-src-hd="https://secure.gravatar.com/avatar/1ab122a22a516152e2da48ebe863f153?s=128&amp;d=blank&amp;r=g" href="https://thenextweb.com/author/mar-maack/" title="Már Másson Maack" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+
+        <p>
+            by <a class="post-authorName" href="https://thenextweb.com/author/mar-maack/" data-event-category="Article" data-event-action="Author - Már Másson Maack" data-event-label="Profile" data-event-non-interaction="true">Már Másson Maack</a>
+            — <time datetime="2019-06-14T10:58:17+00:00" class="timeago" data-full-date="Jun 14, 2019 - 03:58">10 months ago</time>
+                        in <a class="post-section" href="https://thenextweb.com/google/" data-event-category="Article" data-event-action="Category" data-event-label="Google" data-event-non-interaction="true">Google</a>
+                    </p>
+    </div>
+</header>
+                        <div class="post-imageBleed">
+                                                                <div class="post-featuredImage u-m-1_5">
+                                                                                    <img alt="‘YouTube recommendations are toxic,’ says dev who worked on the algorithm" src="Untitled-design65-796x417.png">
+                                                                                                                    </div>
+                                                            </div>
+
+                        <ul class="post-actions post-actions--top u-m-1_5">
+    <li class="post-actions-shares">
+        <div class="post-actions-shares-count">68</div>
+        <div class="post-actions-shares-label">shares</div>
+    </li>
+
+        <li class="multi-btn multi-btn--first">
+        
+	<a class="post-actions-share post-actions-share--facebook popitup gtm-social-top" data-permalink="https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F#shared-facebook" data-title="%E2%80%98YouTube+recommendations+are+toxic%2C%E2%80%99+says+dev+who+worked+on+the+algorithm" data-network="Facebook" data-url="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F%3Futm_source%3Dfacebook%26utm_medium%3Dreferral%26utm_content%3D%2525E2%252580%252598YouTube%252Brecommendations%252Bare%252Btoxic%25252C%2525E2%252580%252599%252Bsays%252Bdev%252Bwho%252Bworked%252Bon%252Bthe%252Balgorithm&amp;p[title]=%E2%80%98YouTube+recommendations+are+toxic%2C%E2%80%99+says+dev+who+worked+on+the+algorithm&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F06%2FUntitled-design65.png&amp;p[summary]=Where+else+could+you+go+for+you+daily+dose+of+how-tos%2C+like+this+one+about+draining+washing+machines%2C+or+15-minute+compilations+of+cats+vomiting%3F+This+is+what+YouTube+was+made+for%2C+...&amp;u=https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F%3Futm_source%3Dfacebook%26utm_medium%3Dreferral%26utm_content%3D%2525E2%252580%252598YouTube%252Brecommendations%252Bare%252Btoxic%25252C%2525E2%252580%252599%252Bsays%252Bdev%252Bwho%252Bworked%252Bon%252Bthe%252Balgorithm&amp;t=%E2%80%98YouTube+recommendations+are+toxic%2C%E2%80%99+says+dev+who+worked+on+the+algorithm" data-width="850" data-height="500" href="#" data-event-category="Article" data-event-action="Share" data-event-label="Facebook" data-event-non-interaction="true">
+		<i class="icon icon--facebook--light"></i>
+	</a>
+
+	    </li>
+        <li class="multi-btn multi-btn--last post-actions-dropdown-toggle">
+        <div class="post-actions-share post-actions-share--facebook with-tooltip" data-tooltip="Save to Facebook">
+            <i class="icon icon--bookmark--light" data-event-category="Article" data-event-action="Share" data-event-label="Facebook - Bookmark" data-event-non-interaction="true"></i>
+        </div>
+        <div class="post-actions-dropdown">
+            <div class="fb-save" data-uri="https://thenextweb.com/google/2019/06/14/youtube-recommendations-toxic-algorithm-google-ai/" data-size="large"></div>
+        </div>
+    </li>
+ <li class="post-actions-btn--twitter"> 
+	<a class="post-actions-share post-actions-share--twitter popitup gtm-social-top" data-permalink="https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F#shared-twitter" data-title="%E2%80%98YouTube+recommendations+are+toxic%2C%E2%80%99+says+dev+who+worked+on+the+algorithm" data-network="Twitter" data-url="https://twitter.com/intent/tweet?url=https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F%3Futm_source%3Dtwitter%26utm_medium%3Dreferral%26utm_content%3D%2525E2%252580%252598YouTube%252Brecommendations%252Bare%252Btoxic%25252C%2525E2%252580%252599%252Bsays%252Bdev%252Bwho%252Bworked%252Bon%252Bthe%252Balgorithm&amp;via=thenextweb&amp;related=thenextweb&amp;text=%E2%80%98YouTube+recommendations+are+toxic%2C%E2%80%99+says+dev+who+worked+on+the+algorithm" data-width="685" data-height="500" href="#" data-event-category="Article" data-event-action="Share" data-event-label="Twitter" data-event-non-interaction="true">
+		<i class="icon icon--twitter--light"></i>
+	</a>
+
+	 </li>  <li class="post-actions-btn--linkedin"> 
+	<a class="post-actions-share post-actions-share--linkedin popitup gtm-social-top" data-permalink="https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F#shared-linkedin" data-title="%E2%80%98YouTube+recommendations+are+toxic%2C%E2%80%99+says+dev+who+worked+on+the+algorithm" data-network="LinkedIn" data-url="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F%3Futm_source%3Dlinkedin%26utm_medium%3Dreferral%26utm_content%3D%2525E2%252580%252598YouTube%252Brecommendations%252Bare%252Btoxic%25252C%2525E2%252580%252599%252Bsays%252Bdev%252Bwho%252Bworked%252Bon%252Bthe%252Balgorithm" data-width="510" data-height="500" href="#" data-event-category="Article" data-event-action="Share" data-event-label="LinkedIn" data-event-non-interaction="true">
+		<i class="icon icon--linkedin--light"></i>
+	</a>
+
+	 </li>  <li class="post-actions-btn--reddit"> 
+	<a class="post-actions-share post-actions-share--reddit popitup gtm-social-top" data-permalink="https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F#shared-reddit" data-title="%E2%80%98YouTube+recommendations+are+toxic%2C%E2%80%99+says+dev+who+worked+on+the+algorithm" data-network="Reddit" data-url="http://www.reddit.com/submit?url=https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F%3Futm_source%3Dreddit%26utm_medium%3Dreferral%26utm_content%3D%2525E2%252580%252598YouTube%252Brecommendations%252Bare%252Btoxic%25252C%2525E2%252580%252599%252Bsays%252Bdev%252Bwho%252Bworked%252Bon%252Bthe%252Balgorithm" data-width="860" data-height="500" href="#" data-event-category="Article" data-event-action="Share" data-event-label="Reddit" data-event-non-interaction="true">
+		<i class="icon icon--reddit--light"></i>
+	</a>
+
+	 </li> 
+        <li class="post-actions-btn--whatsapp">
+            <a class="post-actions-share post-actions-share--whatsapp gtm-social-top" href="whatsapp://send?text=%E2%80%98YouTube+recommendations+are+toxic%2C%E2%80%99+says+dev+who+worked+on+the+algorithm%20-%20https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F" target="_blank">
+                <i class="icon icon--whatsapp--light" data-event-category="Article" data-event-action="Share" data-event-label="whatsapp" data-event-non-interaction="true"></i>
+            </a>
+        </li>
+
+         <li class="post-actions-btn--flipboard"> 
+	<a class="post-actions-share post-actions-share--flipboard popitup gtm-social-top" data-permalink="https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F#shared-flipboard" data-title="%E2%80%98YouTube+recommendations+are+toxic%2C%E2%80%99+says+dev+who+worked+on+the+algorithm" data-network="Flipboard" data-url="https://share.flipboard.com/bookmarklet/popout?url=https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F%3Futm_source%3Dflipboard%26utm_medium%3Dreferral%26utm_content%3D%2525E2%252580%252598YouTube%252Brecommendations%252Bare%252Btoxic%25252C%2525E2%252580%252599%252Bsays%252Bdev%252Bwho%252Bworked%252Bon%252Bthe%252Balgorithm" data-width="600" data-height="500" href="#" data-event-category="Article" data-event-action="Share" data-event-label="Flipboard" data-event-non-interaction="true">
+		<i class="icon icon--flipboard--light"></i>
+	</a>
+
+	 </li> 
+        <li class="post-actions-btn--mail">
+            <a class="post-actions-share post-actions-share--mail gtm-social-top" href="mailto:?subject=%E2%80%98YouTube%20recommendations%20are%20toxic,%E2%80%99%20says%20dev%20who%20worked%20on%20the%20algorithm&amp;body=https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F" target="_blank">
+                <i class="icon icon--mail--light" data-event-category="Article" data-event-action="Share" data-event-label="mail" data-event-non-interaction="true"></i>
+            </a>
+        </li>
+
+            <li class="post-actions-shortUrl with-tooltip" data-clipboard-text="https://tnw.to/uw6XN" data-tooltip="Copy to Clipboard" data-tooltip-success="Copied">
+        <i class="icon icon--share"></i>
+        <input class="shortUrl gtm-social-top" name="short_url_top" value="https://tnw.to/uw6XN" data-event-category="Article" data-event-action="Share" data-event-label="Copy Paste Link" data-event-non-interaction="true" type="text">
+    </li>
+</ul>
+        <div class="tnw-ad ad-unit-TNW_ROS_TOP" id="TNW_ROS_TOP_1212701" data-ad-block-id="TNW_ROS_TOP">
+        <!-- TNW_ROS_TOP-->
+    </div>
+
+                        <div class="post-body fb-quotable u-m-3">
+                            <p><span>Where else could you go for you daily dose of how-tos, like this </span>one about <a href="https://www.youtube.com/watch?v=bxfZthfbkps" target="_blank" rel="nofollow noopener"><span>draining washing machines</span></a>,<span> or </span><a href="https://www.youtube.com/watch?v=KP35qh6fAOc" target="_blank" rel="nofollow noopener"><span>15-minute compilations of cats vomiting</span></a><span>? This is what YouTube was made for, and it’s beautiful. </span></p>
+<p><span>At the same time, as YouTube has become&nbsp;<em>the</em> place for videos on the web, it’s led to a raft of <a href="https://thenextweb.com/socialmedia/2019/03/21/youtubes-child-safe-app-is-crawling-with-videos-advocating-suicide-murder-and-sexual-exploitation/">new</a> <a href="https://thenextweb.com/apps/2019/01/16/youtube-cracking-down-dangerous-pranks-stunts-like-bird-box-challenge/)">problems</a>. Content moderation is </span><a href="https://www.theverge.com/2019/6/10/18660473/youtube-lgbtq-susan-wojcicki-carlos-maza-steven-crowder" target="_blank" rel="nofollow noopener"><span>a constant struggle</span></a><span>
+ and YouTube can do better, but there will likely always be some amount 
+of offensive videos that people can seek out. However, the real issue is
+ the videos we </span><i><span>don’t</span></i><span> seek out: YouTube’s recommendations. </span><br>
+</p><div class="ica-wrapper"><div class="ica-text"><a href="https://thenextweb.com/events/" data-event-category="Article" data-event-action="In Article Block" data-event-label="TNW Couch Conferences" target="_blank"><h4>TNW Couch Conferences</h4><p>Join industry leaders to define new strategies for an uncertain future</p></a></div><div class="ica-button">
+                    <a class="button gtm-in-article-block" data-event-category="Article" data-event-action="In Article Block" data-event-label="REGISTER NOW" href="https://thenextweb.com/events/" target="_blank">REGISTER NOW</a>
+                </div></div><p></p>
+            <div class="jwplayer-placeholder" style="display: block;">
+                <div id="jwplayerInlineAd"></div>
+            </div>
+            <script src="vRZNU7bT.js"> </script>
+            <script>
+                window.jwLibrary = "chM58Ml7";
+            </script>
+        
+<h2><b>Recommendations are a waste of time</b></h2>
+<p><span>You can see the recommendations in the “Up next” list on the 
+right of the screen and they’ll also play automatically when you’ve got 
+autoplay enabled. </span></p>
+<p><span>These are the videos you should be wary of, according to 
+Guillaume Chaslot. He’s the founder of&nbsp;a project to demand greater 
+transparency from online platforms called <a href="https://algotransparency.org/" target="_blank" rel="nofollow noopener">AlgoTransparency</a>, and used to work at Google on YouTube’s recommendation algorithm. H</span><span>e says the motivations behind it are deeply flawed as it isn’t really about what the viewer wants.</span></p>
+<figure class="post-image post-mediaBleed aligncenter"><img class="size-featured_img wp-image-1212727 lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" sizes="(max-width: 796px) 100vw, 796px" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/DSC_1697-796x533.jpg" data-lazy="true" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/DSC_1697-796x533.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/DSC_1697-280x187.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/DSC_1697-403x270.jpg 403w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/DSC_1697-202x135.jpg 202w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/DSC_1697-1592x1066.jpg 1592w" width="796" height="533"><figcaption>Credit: DisinfoLab</figcaption><figcaption><a href="#" data-url="https://twitter.com/intent/tweet?url=https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F&amp;via=thenextweb&amp;related=thenextweb&amp;text=Check out this picture on: Chaslot speaking at the DisinfoLab Conference in Brussels" data-title="Share Chaslot speaking at the DisinfoLab Conference in Brussels on Twitter" data-width="685" data-height="500" class="post-image-share popitup" title="Share Chaslot speaking at the DisinfoLab Conference in Brussels on Twitter"><i class="icon icon--inline icon--twitter--dark"></i></a>Chaslot speaking at the DisinfoLab Conference in Brussels</figcaption></figure>
+<p>“It isn’t inherently awful that YouTube uses AI to recommend video 
+for you, because if the AI is well tuned it can help you get what you 
+want. This would be amazing,” Chaslot told TNW. “But the problem is that
+ the AI isn’t built to help you get what you want — it’s built to get 
+you addicted to YouTube. Recommendations were designed to waste your 
+time.”</p>
+<p><span>Chaslot explains that the metric the algorithm uses to 
+determine a ‘successful’ recommendations is watch time. This might be 
+great for a company trying to sell ads, but doesn’t necessarily reflect 
+what the user wants — and has grave side-effects. </span></p>
+<h2><b>Engaging content gets recommended, which is bad</b></h2>
+<p><span>During his talk at the </span><a href="https://www.disinfo.eu/" target="_blank" rel="nofollow noopener"><span>DisinfoLab Conference</span></a><span>
+ last month, Chaslot noted that divisive and sensational content is 
+often recommended widely: conspiracy theories, fake news, flat-Earther 
+videos, for example. Basically, the closer it stays the edge of what’s 
+allowed under YouTube’s policy, the more engagement it gets. Google 
+completely disagrees with Chaslot, but we’ll get to that later.</span></p>
+<p><span>The basic structure of YouTube’s recommendation algorithm 
+might’ve worked fine for its core types of content — like cat videos, 
+gaming, and music. But as YouTube becomes more central in people’s 
+information and news consumption, Chaslot worries recommendations will 
+push people further to extremes — whether they want it or not — just 
+because it’s in YouTube’s interest to keep us watching for as long as 
+possible. </span></p>
+<figure class="post-image post-mediaBleed aligncenter"><img class="size-full wp-image-1212704 lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" sizes="(max-width: 592px) 100vw, 592px" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Screenshot-2019-06-14-at-10.05.33.png" data-lazy="true" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Screenshot-2019-06-14-at-10.05.33.png 592w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Screenshot-2019-06-14-at-10.05.33-280x147.png 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Screenshot-2019-06-14-at-10.05.33-514x270.png 514w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Screenshot-2019-06-14-at-10.05.33-257x135.png 257w" width="592" height="311"><figcaption><a href="#" data-url="https://twitter.com/intent/tweet?url=https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F&amp;via=thenextweb&amp;related=thenextweb&amp;text=Check out this picture on: Chaslot’s take on Facebook’s natural engagement pattern: “The best way to use social media is to surf the policy line.”" data-title="Share Chaslot’s take on Facebook’s natural engagement pattern: “The best way to use social media is to surf the policy line.” on Twitter" data-width="685" data-height="500" class="post-image-share popitup" title="Share Chaslot’s take on Facebook’s natural engagement pattern: “The best way to use social media is to surf the policy line.” on Twitter"><i class="icon icon--inline icon--twitter--dark"></i></a>Chaslot’s take on Facebook’s natural engagement pattern: “The best way to use social media is to surf the policy line.”</figcaption></figure>
+<p><span>Mark Zuckerberg admitted last year that </span><a href="https://www.facebook.com/notes/mark-zuckerberg/a-blueprint-for-content-governance-and-enforcement/10156443129621634/" target="_blank" rel="nofollow noopener"><span>borderline content was more engaging</span></a>.
+ Google did not want to answer TNW’s questions as to whether the same 
+was true for YouTube, but the company’s spokesperson said in a 
+discussion at the DisinfoLab conference that the company’s studies 
+showed<span> people actually engaged more with quality content. Chaslot 
+says this is something the big tech companies will have to debate 
+between themselves, but based on his own experience, he’s more inclined 
+to believe Zuckerberg at this point.</span></p>
+<p><span>“We’ve got to realize that YouTube recommendations are toxic 
+and it perverts civic discussion,” says Chaslot. “Right now the 
+incentive is to create this type of borderline content that’s very 
+engaging, but not forbidden.” Basically, the more outlandish content you
+ make, the more likely it’ll keep people watching, which in turn will 
+make it more likely to be recommended by the algorithm — which results 
+in greater revenue for the creator, and for YouTube.<br></span></p>
+<p><span>But what about actual, concrete examples of problematic recommendations? </span></p>
+<h2><b>When recommendations go wrong</b></h2>
+<p><span>In Chaslot’s mind, it should be enough to point out that the 
+algorithm’s incentives are completely broken (i.e. watch time doesn’t 
+equal quality) as an example of why it’s bad for us as a society. But to
+ actually show its effects, he made the </span><a href="https://algotransparency.org/" target="_blank" rel="nofollow noopener"><span>AlgoTransparency</span></a><span> tool after he left Google. The tool is meant to give people a better overview of what’s actually being recommended on YouTube. </span></p>
+<p><span>Basically, it tries to find out which videos are shared by most
+ channels to provide an overview you can’t get through your personal 
+browsing. Chaslot points out that most often, the top recommended videos
+ are innocuous, but every now and again, problematic videos pop up.<br></span></p>
+<iframe id="twitter-widget-1" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: medium none;" frameborder="0"></iframe><blockquote class="twitter-tweet" data-lang="en" data-twitter-extracted-i1588497617976592275="true">
+<p dir="ltr" lang="en">This video funded by the Russian government was 
+recommended more than half a million times from more than 236 different 
+channels.<a href="https://t.co/aRNUx2WIOm" target="_blank" rel="nofollow noopener">https://t.co/aRNUx2WIOm</a></p>
+<p>2/</p>
+<p>— Guillaume Chaslot (@gchaslot) <a href="https://twitter.com/gchaslot/status/1121603846088736768?ref_src=twsrc%5Etfw" target="_blank" rel="nofollow noopener">April 26, 2019</a></p>
+</blockquote>
+<p><script async="" src="widgets.js" charset="utf-8"></script></p>
+<p><span>When the Mueller report detailing whether there was any 
+collusion between Russia and Donald Trump’s presidential campaign was 
+released, Chaslot noticed that the analysis recommended from the most 
+channels was a video from RT — a state-sponsored Russian propaganda 
+outlet. </span></p>
+<p><span>That means that if Chaslot is correct, YouTube’s algorithm 
+amplified a video explaining the finding on possible Russian collusion 
+made by… Russia. The video upholds what could be considered a 
+Kremlin-friendly narrative and slams mainstream media. Naturally, 
+Chaslot’s claim caught the attention of the media and was </span><a href="https://www.washingtonpost.com/technology/2019/04/26/youtube-recommended-russian-media-site-above-all-others-analysis-mueller-report-watchdog-group-says/?utm_term=.411db839498b" target="_blank" rel="nofollow noopener"><span>covered widely</span></a><span>.</span></p>
+<p><span>Chaslot says that while other Mueller-related videos got more 
+total recommendations, the RT video stood out because it was recommended
+ like crazy for two days and then nothing — despite having relatively 
+few views. </span></p>
+<p><span>“It was really strange to see this amount of channels that 
+recommended this video, compared to how many views it had,” says Chaslot
+ “The weird thing is that nobody really understands why this happened.”</span></p>
+<p>Now it’s important to get Google’s side of things. Google has completely disowned AlgoTransparency’s methodology <span>(which you can find </span><a href="https://algotransparency.org/methodology.html?candidat=Benoit%20Hamon&amp;file=ytrecos-presidentielle-2017-06-10" target="_blank" rel="nofollow noopener"><span>here</span></a><span>) and told TNW it doesn’t accurately reflect how recommendations work — which are based on surveys, likes, dislikes, and shares.</span></p>
+<blockquote><p><span>As with most assertions made by AlgoTransparency, 
+we have been unable to reproduce the results here. We’ve designed our 
+systems to help ensure that content from more authoritative sources is 
+surfaced prominently in search results and watch next recommendations in
+ certain contexts, including when a viewer is watching news related 
+content on YouTube.</span></p></blockquote>
+<p>Chaslot says that if there are discrepancies with his results, he’d 
+love to know what they are. And the best way to do that, is for Google 
+to simply share which videos YouTube is recommending to people. But the 
+company hasn’t revealed more information on the matter.</p>
+<p>Chaslot also points out that it seems his methods manage to highlight
+ similar faults in the algorithm as Google does. Earlier this year, a 
+Google software engineer gave a talk about correcting biases in YouTube 
+and one of the videos used as an example of that had been flagged by 
+AlgoTransparency before. So something about his approach seems to be 
+working, but we won’t know until Google becomes more transparent about 
+recommendations.</p>
+<figure class="post-image post-mediaBleed aligncenter"><img class="size-featured_img wp-image-1212730 lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" sizes="(max-width: 796px) 100vw, 796px" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Screenshot-2019-06-14-at-10.56.51-796x335.png" data-lazy="true" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Screenshot-2019-06-14-at-10.56.51-796x335.png 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Screenshot-2019-06-14-at-10.56.51-280x118.png 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Screenshot-2019-06-14-at-10.56.51-540x227.png 540w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Screenshot-2019-06-14-at-10.56.51-270x114.png 270w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Screenshot-2019-06-14-at-10.56.51.png 972w" width="796" height="335"><figcaption>Credit: <a href="https://algotransparency.org/" target="_blank" rel="noopener">AlgoTransparency</a></figcaption><figcaption><a href="#" data-url="https://twitter.com/intent/tweet?url=https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F&amp;via=thenextweb&amp;related=thenextweb&amp;text=Check out this picture on: From AlgoTransparency’s website, showing part of its methodology" data-title="Share From AlgoTransparency’s website, showing part of its methodology on Twitter" data-width="685" data-height="500" class="post-image-share popitup" title="Share From AlgoTransparency’s website, showing part of its methodology on Twitter"><i class="icon icon--inline icon--twitter--dark"></i></a>From AlgoTransparency’s website, showing part of its methodology</figcaption></figure>
+<h2><b>What should we do about it?</b></h2>
+<p><span>YouTube doesn’t really provide any options now for users to 
+control the recommendations they receive. Sure you can block some 
+channels, but Chaslot points out that the algorithm might still push you
+ towards similar channels as you’ve already “shown interest” in this 
+type of content. So what can you do?</span></p>
+<p><span>“The best short-term solution is to simply delete the 
+recommendation function. I really don’t think it’s useful at all to the 
+user,” Chaslot explains. “If YouTube wants to keep recommendations, it 
+could stick to the curated ones done via email — where humans make sure 
+nothing crazy gets on there — or just make them stick to channels you’ve
+ subscribed to.”</span></p>
+<p><span>Chaslot also acknowledges that most people — himself included —
+ are too curious not to click borderline content, so he uses a Chrome 
+extension called </span><a href="https://chrome.google.com/webstore/detail/nudge/dmhgdnbkjkejeddddlklojinngaideac" target="_blank" rel="nofollow noopener"><span>Nudge</span></a><span>
+ that removes addictive online features like Facebook’s News feed and 
+YouTube recommendations. “I still click on stupid thing when I see them,
+ so the best thing to is to just remove them.” </span></p>
+<figure class="post-image post-mediaBleed aligncenter"><img class="size-full wp-image-1212800 lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" sizes="(max-width: 640px) 100vw, 640px" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/unnamed-4.png" data-lazy="true" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/unnamed-4.png 640w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/unnamed-4-280x175.png 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/unnamed-4-432x270.png 432w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/unnamed-4-216x135.png 216w" width="640" height="400"><figcaption>Credit: Nudge</figcaption><figcaption><a href="#" data-url="https://twitter.com/intent/tweet?url=https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F&amp;via=thenextweb&amp;related=thenextweb&amp;text=Check out this picture on: Nudge removes all the addictive stuff from social media sites… which is pretty much everything." data-title="Share Nudge removes all the addictive stuff from social media sites… which is pretty much everything. on Twitter" data-width="685" data-height="500" class="post-image-share popitup" title="Share Nudge removes all the addictive stuff from social media sites… which is pretty much everything. on Twitter"><i class="icon icon--inline icon--twitter--dark"></i></a>Nudge removes all the addictive stuff from social media sites… which is pretty much everything.</figcaption></figure>
+<p><span>All of this is just to treat the symptoms, not the cause. 
+Chaslot believes the real focus needs to be on long term solutions. At 
+the moment, users are fighting against supercomputers to try to protect 
+their free will, but it’s a losing battle with the current tools. </span></p>
+<p><span>That’s why Chaslot is convinced the only way forward is to 
+provide proper transparency and give users real control: “In the long 
+term, we need people to be in control of the AI, instead of AI 
+controlling the users.”</span></p>                            
+
+<p class="post-article-read-next">
+    <b>Read next:</b>
+    <a class="gtm-article-read-next" data-event-category="Article" data-event-action="Next post" data-event-label="" data-event-non-interaction="true" href="https://thenextweb.com/hardfork/2019/06/14/europol-cryptocurrency-game-fight-crime/">
+        Europol is developing a ‘game’ to teach officers how to trace cryptocurrency    </a>
+</p>
+
+
+    
+        <div class="corona-wrapper">
+            <h3>Corona coverage</h3>
+            <p>Read our <a href="https://thenextweb.com/corona/" target="_blank" rel="nofollow noopener">daily coverage</a> on how the tech industry is responding to the coronavirus and subscribe to our weekly newsletter <a href="https://tnw.to/newsletter">Coronavirus in Context</a>.</p>
+            <p>For tips and tricks on working remotely, check out our Growth Quarters articles <a href="https://thenextweb.com/growth-quarters" target="_blank" rel="nofollow noopener">here</a> or follow us on <a href="http://twitter.com/growth_quarters" target="_blank" rel="nofollow noopener">Twitter</a>.</p>
+        </div>
+                            <div class="post-in-content-tags">
+                                <span class="tag"><a href="https://thenextweb.com/section/tech/" data-event-category="Article" data-event-action="Tags" data-event-label="Tech" data-event-non-interaction="true">Tech</a></span><span class="tag"><a href="https://thenextweb.com/topic/youtube/" data-event-category="Article" data-event-action="Tags" data-event-label="YouTube" data-event-non-interaction="true">YouTube</a></span><span class="tag"><a href="https://thenextweb.com/vocabulary/youtube-2/" data-event-category="Article" data-event-action="Tags" data-event-label="YouTube" data-event-non-interaction="true">YouTube</a></span><span class="tag"><a href="https://thenextweb.com/vocabulary/transparency-behavior/" data-event-category="Article" data-event-action="Tags" data-event-label="Transparency (behavior)" data-event-non-interaction="true">Transparency (behavior)</a></span><span class="tag"><a href="https://thenextweb.com/vocabulary/google-2-2/" data-event-category="Article" data-event-action="Tags" data-event-label="Google" data-event-non-interaction="true">Google</a></span><span class="tag"><a href="https://thenextweb.com/vocabulary/artificial-intelligence-video-games/" data-event-category="Article" data-event-action="Tags" data-event-label="Artificial intelligence (video games)" data-event-non-interaction="true">Artificial intelligence (video games)</a></span>                            </div>
+
+                        </div>
+
+                        
+<ul class="post-share u-row">
+    <li class="u-col-xs-6">
+        <a class="button button--facebook u-w-xs-100 popitup gtm-social-bottom" data-permalink="https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F" data-title="%E2%80%98YouTube+recommendations+are+toxic%2C%E2%80%99+says+dev+who+worked+on+the+algorithm" data-network="Facebook" data-url="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Ftnw.to%2FUzvsV&amp;p[title]=%E2%80%98YouTube+recommendations+are+toxic%2C%E2%80%99+says+dev+who+worked+on+the+algorithm&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F06%2FUntitled-design65.png&amp;p[summary]=Where+else+could+you+go+for+you+daily+dose+of+how-tos%2C+like+this+one+about+draining+washing+machines%2C+or+15-minute+compilations+of+cats+vomiting%3F+This+is+what+YouTube+was+made+for%2C+...&amp;u=https%3A%2F%2Ftnw.to%2FUzvsV&amp;t=%E2%80%98YouTube+recommendations+are+toxic%2C%E2%80%99+says+dev+who+worked+on+the+algorithm" data-width="850" data-height="500" href="#" data-event-category="Article" data-event-action="Share" data-event-label="Facebook - Bottom" data-event-non-interaction="true">
+            <i class="icon icon--inline icon--facebook--light"></i> Share<span class="u-showFrom-m"> on Facebook (5)</span>
+        </a>
+    </li>
+    <li class="u-col-xs-6">
+        <a class="button button--twitter u-w-xs-100 popitup gtm-social-bottom" data-permalink="https%3A%2F%2Fthenextweb.com%2Fgoogle%2F2019%2F06%2F14%2Fyoutube-recommendations-toxic-algorithm-google-ai%2F" data-title="%E2%80%98YouTube+recommendations+are+toxic%2C%E2%80%99+says+dev+who+worked+on+the+algorithm" data-network="Facebook" data-url="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftnw.to%2Fa4tlz&amp;via=thenextweb&amp;related=thenextweb&amp;text=%E2%80%98YouTube+recommendations+are+toxic%2C%E2%80%99+says+dev+who+worked+on+the+algorithm" data-width="685" data-height="500" href="#" data-event-category="Article" data-event-action="Share" data-event-label="Twitter - Bottom" data-event-non-interaction="true">
+            <i class="icon icon--inline icon--twitter--light"></i> Share<span class="u-showFrom-m"> on Twitter (49)</span>
+        </a>
+    </li>
+</ul>
+                    </article>
+                                    </div>
+
+                <aside class="sidebar">
+
+	    <div class="tnw-ad ad-unit-TNW_ROS_MPU_ATF" id="TNW_ROS_MPU_ATF_1212701" data-ad-block-id="TNW_ROS_MPU_ATF">
+        <!-- TNW_ROS_MPU_ATF-->
+    </div>
+	<section class="most-popular u-m-2" id="most-popular">
+		<h2 class="u-m-1">Most popular</h2>
+		<ul class="u-row">
+			<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div class="story story--small" data-event-category="Article" data-event-action="Most Popular" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-mostpopular" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/robotpresident-96x96.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/robotpresident-96x96.jpg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/robotpresident-192x192.jpg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/robotpresident-550x550.jpg 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/robotpresident-470x470.jpg 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96" data-event-category="Article" data-event-action="Most Popular" data-event-label="1" href="https://thenextweb.com/neural/2020/04/29/facebooks-teaching-ai-to-lie-like-a-human/" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+						<span class="story-rank">1</span>
+						<h4 class="story-title">
+			<a data-event-category="Article" data-event-action="Most Popular" data-event-label="1" class="gtm-mostpopular" href="https://thenextweb.com/neural/2020/04/29/facebooks-teaching-ai-to-lie-like-a-human/">
+				Facebook's teaching AI to lie like a human			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a data-event-category="Article" data-event-action="Most Popular" data-event-label="1" href="https://thenextweb.com/author/tristangreen/">Tristan Greene</a>
+			</li>
+			<li>
+				<time datetime="2020-04-29T20:03:15+00:00" class="timeago" data-full-date="Apr 29, 2020 - 13:03">3 days ago</time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div class="story story--small" data-event-category="Article" data-event-action="Most Popular" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-mostpopular" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Snag_245e5223-96x96.png" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Snag_245e5223-96x96.png 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Snag_245e5223-192x192.png 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Snag_245e5223-840x833.png 840w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Snag_245e5223-550x550.png 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Snag_245e5223-470x470.png 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96" data-event-category="Article" data-event-action="Most Popular" data-event-label="2" href="https://thenextweb.com/plugged/2020/04/29/lenovo-made-a-new-thinkpad-keyboard-for-your-desktop-mouse-nub-and-all/" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+						<span class="story-rank">2</span>
+						<h4 class="story-title">
+			<a data-event-category="Article" data-event-action="Most Popular" data-event-label="2" class="gtm-mostpopular" href="https://thenextweb.com/plugged/2020/04/29/lenovo-made-a-new-thinkpad-keyboard-for-your-desktop-mouse-nub-and-all/">
+				Lenovo made a new ThinkPad keyboard for your desktop - mouse nub and all			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a data-event-category="Article" data-event-action="Most Popular" data-event-label="2" href="https://thenextweb.com/author/napierlopez/">Napier Lopez</a>
+			</li>
+			<li>
+				<time datetime="2020-04-29T23:32:31+00:00" class="timeago" data-full-date="Apr 29, 2020 - 16:32">3 days ago</time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div class="story story--small" data-event-category="Article" data-event-action="Most Popular" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-mostpopular" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/jukebox-96x96.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/jukebox-96x96.jpg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/jukebox-192x192.jpg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/jukebox-550x550.jpg 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/jukebox-470x470.jpg 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96" data-event-category="Article" data-event-action="Most Popular" data-event-label="3" href="https://thenextweb.com/neural/2020/04/30/this-ai-creates-entire-songs-complete-with-music-lyrics-and-vocals/" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+						<span class="story-rank">3</span>
+						<h4 class="story-title">
+			<a data-event-category="Article" data-event-action="Most Popular" data-event-label="3" class="gtm-mostpopular" href="https://thenextweb.com/neural/2020/04/30/this-ai-creates-entire-songs-complete-with-music-lyrics-and-vocals/">
+				This AI creates entire songs complete with music, lyrics, and vocals			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a data-event-category="Article" data-event-action="Most Popular" data-event-label="3" href="https://thenextweb.com/author/tristangreen/">Tristan Greene</a>
+			</li>
+			<li>
+				<time datetime="2020-04-30T21:35:15+00:00" class="timeago" data-full-date="Apr 30, 2020 - 14:35">2 days ago</time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div class="story story--small" data-event-category="Article" data-event-action="Most Popular" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-mostpopular" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/Microsoft2-96x96.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/Microsoft2-96x96.jpg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/Microsoft2-192x192.jpg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/Microsoft2-470x470.jpg 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96" data-event-category="Article" data-event-action="Most Popular" data-event-label="4" href="https://thenextweb.com/hardfork/2020/04/30/microsoft-stock-pumps-after-it-sees-two-years-of-digital-transformation-in-two-months/" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+						<span class="story-rank">4</span>
+						<h4 class="story-title">
+			<a data-event-category="Article" data-event-action="Most Popular" data-event-label="4" class="gtm-mostpopular" href="https://thenextweb.com/hardfork/2020/04/30/microsoft-stock-pumps-after-it-sees-two-years-of-digital-transformation-in-two-months/">
+				Microsoft stock pumps after it sees two years of digital transformation in two months			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a data-event-category="Article" data-event-action="Most Popular" data-event-label="4" href="https://thenextweb.com/author/davidcanellis/">David Canellis</a>
+			</li>
+			<li>
+				<time datetime="2020-04-30T11:26:39+00:00" class="timeago" data-full-date="Apr 30, 2020 - 04:26">2 days ago</time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div class="story story--small" data-event-category="Article" data-event-action="Most Popular" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-mostpopular" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/zoom-lies-daily-active-users-96x96.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/zoom-lies-daily-active-users-96x96.jpg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/zoom-lies-daily-active-users-192x192.jpg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/zoom-lies-daily-active-users-550x550.jpg 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/zoom-lies-daily-active-users-470x470.jpg 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96" data-event-category="Article" data-event-action="Most Popular" data-event-label="5" href="https://thenextweb.com/apps/2020/04/30/zoom-daily-active-users-lie-300m/" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+						<span class="story-rank">5</span>
+						<h4 class="story-title">
+			<a data-event-category="Article" data-event-action="Most Popular" data-event-label="5" class="gtm-mostpopular" href="https://thenextweb.com/apps/2020/04/30/zoom-daily-active-users-lie-300m/">
+				Zoom played itself when it lied about having 300M daily active users			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a data-event-category="Article" data-event-action="Most Popular" data-event-label="5" href="https://thenextweb.com/author/dimitarmihov/">Mix</a>
+			</li>
+			<li>
+				<time datetime="2020-04-30T14:04:52+00:00" class="timeago" data-full-date="Apr 30, 2020 - 07:04">2 days ago</time>
+			</li>
+		</ul>
+	</div>
+</li>
+		</ul>
+	</section>
+    <section class="newsletter u-m-2">
+    <header class="newsletter-header u-m-1">
+        <h2>Never miss out</h2>
+        <p class="u-fontSize-s">Stay tuned with our weekly recap of what’s hot &amp; cool by our CEO <a href="https://thenextweb.com/author/boris">Boris</a>.</p>
+    </header>
+    <form action="https://thenextweb.com/wp-content/themes/cyberdelia/ajax/form/newsletter.php" class="u-m-0_5" data-xhr="" data-xhr-success="newsletterSuccess" data-xhr-fail="newsletterFail" method="post" onsubmit="dataLayer.push( {'event':'email','eventCategory':'Email','eventAction':'Sign up','eventLabel':'Sidebar','eventNonInteraction':1} );">
+        <div class="newsletter-success">
+            <b>T</b><b>h</b><b>a</b><b>n</b><b>k</b><b>&nbsp;</b><b>y</b><b>o</b><b>u</b><b>!</b>
+        </div>
+        <div class="formField">
+            <div class="formField-withButton">
+                <div class="formField-withIcon u-float-left u-w-xs-75">
+                                    <input class="" name="source" id="source-sidebar-newsletter" style="display: none" value="thenextweb.com/google/2019/06/14/youtube-recommendations-toxic-algorithm-google-ai/" hidden="">
+                    <input class="formInput formInput--text" name="email" placeholder="Email" required="" type="email">
+                    <i class="icon icon--mail"></i>
+                </div>
+                <button class="button u-float-left u-w-xs-25" type="submit">Do it</button>
+            </div>
+        </div>
+    </form>
+    <p class="u-color-light u-fontSize-s">
+        Join over 260,000 subscribers!
+    </p>
+</section>
+
+    <!--section class="u-m-1_5" id="whos-hiring">
+        <h2 class="u-m-1">Who's Hiring
+            <div class="whos-hiring-contactus"><a href="mailto:harmen@thenextweb.com?subject=Who’s Hiring">Add your company</a></div>
+        </h2>
+	<ul class="u-row">
+            <li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+            </li>
+            <li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+            </li>
+        </ul>
+    </section-->
+
+	<section class="u-m-1_5" id="latest-stories">
+		<h2 class="u-m-1"><a href="https://thenextweb.com/latest/" data-event-category="Article" data-event-action="Latest News" data-event-label="Headline" data-event-non-interaction="true">Latest</a></h2>
+		<ul class="u-row">
+			<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div class="story story--small" data-event-category="Article" data-event-action="Latest News" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-latestnews" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Spotted-Garden-Eels-96x96.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Spotted-Garden-Eels-96x96.jpg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Spotted-Garden-Eels-192x192.jpg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Spotted-Garden-Eels-550x550.jpg 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Spotted-Garden-Eels-470x470.jpg 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96" data-event-category="Article" data-event-action="Latest News" data-event-label="1" href="https://thenextweb.com/shareables/2020/05/01/japanese-aquarium-facetime-frightened-eels/" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+						<span class="story-rank">1</span>
+						<h4 class="story-title">
+			<a data-event-category="Article" data-event-action="Latest News" data-event-label="1" class="gtm-latestnews" href="https://thenextweb.com/shareables/2020/05/01/japanese-aquarium-facetime-frightened-eels/">
+				Japanese aquarium asks you to FaceTime its frightened eels			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a data-event-category="Article" data-event-action="Latest News" data-event-label="1" href="https://thenextweb.com/author/rachelkaser/">Rachel Kaser</a>
+			</li>
+			<li>
+				<time datetime="2020-05-01T17:14:53+00:00" class="timeago" data-full-date="May 1, 2020 - 10:14">1 day ago</time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div class="story story--small" data-event-category="Article" data-event-action="Latest News" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-latestnews" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Untitled-design-22-96x96.png" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Untitled-design-22-96x96.png 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Untitled-design-22-192x192.png 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Untitled-design-22-550x550.png 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Untitled-design-22-470x470.png 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96" data-event-category="Article" data-event-action="Latest News" data-event-label="2" href="https://thenextweb.com/neural/2020/05/01/streaming-service-deezer-built-an-ai-to-catch-the-explicit-lyrics-human-censors-miss/" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+						<span class="story-rank">2</span>
+						<h4 class="story-title">
+			<a data-event-category="Article" data-event-action="Latest News" data-event-label="2" class="gtm-latestnews" href="https://thenextweb.com/neural/2020/05/01/streaming-service-deezer-built-an-ai-to-catch-the-explicit-lyrics-human-censors-miss/">
+				Streaming service Deezer built an AI to catch the explicit lyrics human censors miss			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a data-event-category="Article" data-event-action="Latest News" data-event-label="2" href="https://thenextweb.com/author/thomas-macaulay/">Thomas Macaulay</a>
+			</li>
+			<li>
+				<time datetime="2020-05-01T16:37:29+00:00" class="timeago" data-full-date="May 1, 2020 - 09:37">1 day ago</time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div class="story story--small" data-event-category="Article" data-event-action="Latest News" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-latestnews" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/Falcon-Heavy-Elon-Musk-Space-X-Tesla-1-96x96.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/Falcon-Heavy-Elon-Musk-Space-X-Tesla-1-96x96.jpg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/Falcon-Heavy-Elon-Musk-Space-X-Tesla-1-192x192.jpg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/Falcon-Heavy-Elon-Musk-Space-X-Tesla-1-912x912.jpg 912w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/Falcon-Heavy-Elon-Musk-Space-X-Tesla-1-550x550.jpg 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/Falcon-Heavy-Elon-Musk-Space-X-Tesla-1-470x470.jpg 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96" data-event-category="Article" data-event-action="Latest News" data-event-label="3" href="https://thenextweb.com/hardfork/2020/05/01/tesla-stock-crashes-after-elon-musk-tweets-tesla-stock-too-high-imo/" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+						<span class="story-rank">3</span>
+						<h4 class="story-title">
+			<a data-event-category="Article" data-event-action="Latest News" data-event-label="3" class="gtm-latestnews" href="https://thenextweb.com/hardfork/2020/05/01/tesla-stock-crashes-after-elon-musk-tweets-tesla-stock-too-high-imo/">
+				Tesla stock crashes after Elon Musk tweets: 'Tesla stock too high imo'			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a data-event-category="Article" data-event-action="Latest News" data-event-label="3" href="https://thenextweb.com/author/davidcanellis/">David Canellis</a>
+			</li>
+			<li>
+				<time datetime="2020-05-01T15:35:27+00:00" class="timeago" data-full-date="May 1, 2020 - 08:35">1 day ago</time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div class="story story--small" data-event-category="Article" data-event-action="Latest News" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-latestnews" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-3-96x96.png" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-3-96x96.png 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-3-192x192.png 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-3-550x550.png 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-3-470x470.png 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96" data-event-category="Article" data-event-action="Latest News" data-event-label="4" href="https://thenextweb.com/syndication/2020/05/01/researchers-tested-47-old-drugs-that-might-treat-the-coronavirus-these-were-the-results/" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+						<span class="story-rank">4</span>
+						<h4 class="story-title">
+			<a data-event-category="Article" data-event-action="Latest News" data-event-label="4" class="gtm-latestnews" href="https://thenextweb.com/syndication/2020/05/01/researchers-tested-47-old-drugs-that-might-treat-the-coronavirus-these-were-the-results/">
+				Researchers tested 47 old drugs that might treat the coronavirus — these were the results			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a data-event-category="Article" data-event-action="Latest News" data-event-label="4" href="https://thenextweb.com/author/theconversation/">The Conversation</a>
+			</li>
+			<li>
+				<time datetime="2020-05-01T14:22:04+00:00" class="timeago" data-full-date="May 1, 2020 - 07:22">1 day ago</time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div class="story story--small" data-event-category="Article" data-event-action="Latest News" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-latestnews" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/sales-move-tesla-ev-china-subsidy-musk-car-buying-mobility-tech-96x96.png" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/sales-move-tesla-ev-china-subsidy-musk-car-buying-mobility-tech-96x96.png 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/sales-move-tesla-ev-china-subsidy-musk-car-buying-mobility-tech-192x192.png 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/sales-move-tesla-ev-china-subsidy-musk-car-buying-mobility-tech-912x900.png 912w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/sales-move-tesla-ev-china-subsidy-musk-car-buying-mobility-tech-550x550.png 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/sales-move-tesla-ev-china-subsidy-musk-car-buying-mobility-tech-470x470.png 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96" data-event-category="Article" data-event-action="Latest News" data-event-label="5" href="https://thenextweb.com/shift/2020/05/01/tesla-pulls-a-slick-sales-move-in-china-lowers-model-3-price-to-fit-new-subsidy-limit/" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+						<span class="story-rank">5</span>
+						<h4 class="story-title">
+			<a data-event-category="Article" data-event-action="Latest News" data-event-label="5" class="gtm-latestnews" href="https://thenextweb.com/shift/2020/05/01/tesla-pulls-a-slick-sales-move-in-china-lowers-model-3-price-to-fit-new-subsidy-limit/">
+				Tesla pulls a slick sales move in China, lowers Model 3 price to fit new subsidy limit			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a data-event-category="Article" data-event-action="Latest News" data-event-label="5" href="https://thenextweb.com/author/matthewbeedham/">Matthew Beedham</a>
+			</li>
+			<li>
+				<time datetime="2020-05-01T13:55:25+00:00" class="timeago" data-full-date="May 1, 2020 - 06:55">1 day ago</time>
+			</li>
+		</ul>
+	</div>
+</li>
+		</ul>
+	</section>
+
+        <div class="tnw-ad ad-unit-TNW_ROS_MPU_BTF" id="TNW_ROS_MPU_BTF_1212701" data-ad-block-id="TNW_ROS_MPU_BTF">
+        <!-- TNW_ROS_MPU_BTF-->
+    </div>
+
+</aside>
+
+            </div>
+        </div>
+
+        <script id="sheet-next-article-btn" type="x-tmpl-tnw">
+    <div class="sheet sheet-next-article">
+        <div class="sheet-next-article-wrapper wrapper">
+            <a href="">
+                <span class="sheet-next-article-label">Read Next</span>
+                <span class="sheet-next-article-title"></span>
+            </a>
+        </div>
+    </div>
+</script>
+    </div>
+    
+        </main><iframe style="display: none;" name="__cmpLocator"></iframe>
+
+        <footer class="footer">
+
+            <div class="footer-links">
+                <div class="wrapper">
+                    <ul class="footer-links-social">
+                        <li><a href="https://www.facebook.com/thenextweb" target="_blank" rel="noopener" data-event-category="Footer" data-event-action="Social" data-event-label="Facebook" data-event-non-interaction="true"><i class="icon icon--facebook--light"></i></a>
+                        </li><li><a href="https://twitter.com/thenextweb" target="_blank" rel="noopener" data-event-category="Footer" data-event-action="Social" data-event-label="Twitter" data-event-non-interaction="true"><i class="icon icon--twitter--light"></i></a>
+                        </li><li><a href="https://www.youtube.com/user/thenextweb" target="_blank" rel="noopener" data-event-category="Footer" data-event-action="Social" data-event-label="YouTube" data-event-non-interaction="true"><i class="icon icon--youtube--light"></i></a>
+                        </li><li><a href="https://www.instagram.com/thenextweb" target="_blank" rel="noopener" data-event-category="Footer" data-event-action="Social" data-event-label="Instagram" data-event-non-interaction="true"><i class="icon icon--instagram--light"></i></a>
+                        </li><li><a href="https://www.pinterest.com/thenextweb" target="_blank" rel="noopener" data-event-category="Footer" data-event-action="Social" data-event-label="Pinterest" data-event-non-interaction="true"><i class="icon icon--pinterest--light"></i></a>
+                        </li><li><a href="https://thenextweb.com/feed/" target="_blank" rel="noopener" data-event-category="Footer" data-event-action="Social" data-event-label="Feed" data-event-non-interaction="true"><i class="icon icon--rss--light"></i></a>
+                        </li><li><a data-modal="modalStayTuned" href="#" data-event-category="Footer" data-event-action="Social" data-event-label="Newsletter" data-event-non-interaction="true"><i class="icon icon--mail--light"></i></a>
+                    </li></ul>
+                    <ul class="footer-links-menu">
+                        <li><a href="https://thenextweb.com/conference/" data-event-category="Footer" data-event-action="Conference" data-event-label="" data-event-non-interaction="true">Events</a></li>
+                        <li><a href="https://thenextweb.com/about" data-event-category="Footer" data-event-action="About" data-event-label="" data-event-non-interaction="true">About</a></li>
+                        <li><a href="https://thenextweb.com/advertise" target="_blank" data-event-category="Footer" data-event-action="Advertise" data-event-label="" data-event-non-interaction="true">Advertise</a></li>
+                        <li><a href="https://thenextweb.homerun.hr/" target="_blank" rel="noopener" data-event-category="Footer" data-event-action="Jobs" data-event-label="" data-event-non-interaction="true">Jobs</a></li>
+                        <li><a href="https://thenextweb.com/about#contact" data-event-category="Footer" data-event-action="Contact" data-event-label="" data-event-non-interaction="true">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <div class="wrapper">
+                        <span>
+                            <a href="https://thenextweb.com/"><img alt="The Next Web" class="footer-legal-logoTNW" src="tnw.svg"></a>
+                            © 2006–2020 The Next Web B.V.
+                        </span>
+                        <span>Made with <b>♥</b> in Amsterdam.</span>
+                        <span>
+                            Powered by
+                            <a href="https://www.stackpath.com/?utm_campaign=Partner%20Display&amp;utm_source=Partner%20Display&amp;utm_medium=thenextweb" target="_blank" rel="noopener"><img alt="StackPath" class="footer-legal-logoStackPath" src="stackpath.svg"></a>
+                        </span>
+                </div>
+            </div>
+            
+        </footer>
+        <div class="js-modal modal modalStayTuned" id="modalStayTuned">
+    <div class="modal-window modal-window--noFooter">
+        <header class="modal-header">
+            <h3>Stay tuned</h3>
+            <a href="#close" title="Esc"><i class="ss-pika ss-delete" onclick="dataLayer.push( {'event':'email','eventCategory':'Email','eventAction':'Close','eventLabel':'Modal','eventNonInteraction':1} )"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#99A1AA" d="M31 19.2l-1.5-1.4-5.3 5.3-5.2-5.3-1.5 1.4 5.3 5.3-5.3 5.3 1.5 1.4 5.2-5.3 5.3 5.3 1.5-1.4-5.3-5.3"></path></svg></i></a>
+        </header>
+        <div class="modal-body">
+            <h2 class="modalStayTuned-title u-m-0_5 u-text-center">
+                Treat yourself
+            </h2>
+            <p class="lead u-m-1_5 u-text-center">
+                Sit back and let the hottest tech news come to you by the magic of electronic mail.
+            </p>
+            <form action="https://thenextweb.com/wp-content/themes/cyberdelia/ajax/form/newsletter.php" class="u-m-1" method="post" data-xhr="" data-xhr-fail="newsletterFail" data-xhr-success="newsletterSuccess" onsubmit="dataLayer.push( {'event':'email','eventCategory':'Email','eventAction':'Sign up','eventLabel':'Modal','eventNonInteraction':1} );">
+                <div class="modalStayTuned-success">
+                    <b>T</b><b>h</b><b>a</b><b>n</b><b>k</b><b>&nbsp;</b><b>y</b><b>o</b><b>u</b><b>!</b>
+                </div>
+                <div class="formField">
+                    <div class="formField-withButton">
+                        <div class="formField-withIcon u-float-left u-w-xs-75">
+                            <input class="formInput formInput--text" name="email" placeholder="Email" required="" type="email">
+                                                        <input class="" name="source" id="source-newsletter" style="display: none" value="thenextweb.com/google/2019/06/14/youtube-recommendations-toxic-algorithm-google-ai/" hidden="">
+                            <i class="icon icon--mail"></i>
+                        </div>
+                        <button class="button u-float-left u-w-xs-25" type="submit">Sign up</button>
+                    </div>
+                </div>
+            </form>
+            <p class="u-color-light u-fontSize-xs u-m-1 u-text-center">
+                Prefer to get the news as it happens? Follow us on social media.
+            </p>
+            <ul class="modalStayTuned-channels u-row">
+                <li class="u-col-xs-6 u-m-0">
+                    <div class="modalStayTuned-channels-channel modalStayTuned-channels-channel--twitter">
+                    <div class="modalStayTuned-channels-icon"><a href="https://twitter.com/thenextweb" target="_blank" rel="noopener"><img alt="Twitter" src="icon-twitter.svg"></a></div>
+                        <p class="modalStayTuned-channels-followers">
+                            <b>1.76M</b> followers
+                        </p>
+                        <iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: absolute; visibility: hidden; width: 0px; height: 0px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.c63890edc4243ee77048d507b181eeec.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=thenextweb&amp;show_count=false&amp;show_screen_name=false&amp;size=m&amp;time=1588497619100" frameborder="0"></iframe><a class="twitter-follow-button" data-show-count="false" data-show-screen-name="false" href="https://twitter.com/thenextweb" data-twitter-extracted-i1588497617964235201="true"></a>
+                    </div>
+                </li>
+                <li class="u-col-xs-6 u-m-0">
+                    <div class="modalStayTuned-channels-channel modalStayTuned-channels-channel--facebook">
+                        <div class="modalStayTuned-channels-icon"><a href="https://www.facebook.com/thenextweb" target="_blank" rel="noopener"><img alt="Facebook" src="icon-facebook.svg"></a></div>
+                        <p class="modalStayTuned-channels-followers">
+                            <b>1M</b> likes
+                        </p>
+                        <div class="fb-like" data-href="https://www.facebook.com/thenextweb" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="js-modal modal modalStayTuned" id="modalSurvey">
+    <div class="modal-window modal-window--noFooter">
+        <header class="modal-header">
+            <h3>Help us out</h3>
+            <a href="#close" title="Esc" rel="modal:close"><i class="ss-pika ss-delete" onclick="dataLayer.push( {'event':'email','eventCategory':'Email','eventAction':'Close','eventLabel':'Modal','eventNonInteraction':1} )"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#99A1AA" d="M31 19.2l-1.5-1.4-5.3 5.3-5.2-5.3-1.5 1.4 5.3 5.3-5.3 5.3 1.5 1.4 5.2-5.3 5.3 5.3 1.5-1.4-5.3-5.3"></path></svg></i></a>
+        </header>
+        <div class="modal-body">
+            <h2 class="modalStayTuned-title u-m-0_5 u-text-center">
+                Who are you?
+            </h2>
+            <p class="lead u-m-1_5 u-text-center">
+                Got two minutes to spare? We'd love to know a bit more about our readers.<br><br>
+                <a class="button u-w-xs-25" href="#">Start!</a>
+            </p>
+            <p class="u-color-light u-fontSize-xs u-m-1 u-text-center">
+                All data collected in the survey is anonymous.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <!-- <button class="pswp__button pswp__button--share" title="Share"></button> -->
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div> -->
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><div class="search" id="search">
+    <header class="search-header">
+        <a class="search-header-logo" href="https://thenextweb.com/">
+            <img alt="The Next Web" src="tnw-red.svg">
+        </a>
+        <a id="search--close" class="search--close" href="#"><i class="icon icon--close"></i></a>
+    </header>
+    <form action="/" class="search-form" method="get">
+        <input autocomplete="off" id="search-input" name="q" placeholder="Search" onfocus="this.value = this.value;" type="text">
+        <a id="search-clear" class="search-clear" href="#"><i class="icon icon--close icon--close-white icon--close-small"></i></a>
+    </form>
+    <div class="search-results" id="searchResults"></div>
+
+    <div class="search-nav-hints">
+        <div class="search-nav-hint">
+            <span class="search-nav-hint-key">↑</span> <span class="search-nav-hint-key">↓</span> Navigate up/down
+        </div>
+        <div class="search-nav-hint">
+            <span class="search-nav-hint-key">Enter</span> Go to article
+        </div>
+        <div class="search-nav-hint">
+            <span class="search-nav-hint-key">/</span> Search new term
+        </div>
+        <div class="search-nav-hint">
+            <span class="search-nav-hint-key">Esc</span> Close search
+        </div>
+    </div>
+
+</div>
+
+    <script type="text/javascript" src="advertisement.js" async=""></script>
+
+    <script type="text/javascript">
+        var adBlocker = true;
+        var APP_ENV = {"theme":"cyberdelia","permalink":"https:\/\/thenextweb.com\/google\/2019\/06\/14\/youtube-recommendations-toxic-algorithm-google-ai","template":"article","paths":{"site":"https:\/\/thenextweb.com\/","base":"https:\/\/thenextweb.com\/wp-content\/themes\/cyberdelia\/","assets":"https:\/\/cdn0.tnwcdn.com\/wp-content\/themes\/cyberdelia\/assets\/"},"pageIdx":1,"currentPost":1212701,"activePostIdx":0,"postRack":[{"id":1212701,"permalink":"https:\/\/thenextweb.com\/google\/2019\/06\/14\/youtube-recommendations-toxic-algorithm-google-ai\/","title":"\u2018YouTube recommendations are toxic,\u2019 says dev who worked on the algorithm","socialTitle":"\u2018YouTube recommendations are toxic,\u2019 says dev who worked on the algorithm","datetime":"2019-06-14T10:58:17+00:00","author":"M\u00e1r M\u00e1sson Maack","category":"google","categoryId":34,"section":"tech","sectionId":35266,"wordCount":2833,"canvasSlug":null,"adTargeting":{"postId":1212701,"category":"Google,Social Media","section":"Tech","topic":"YouTube","sponsorName":null,"isSponsoredPost":"No","isSponsoredCategory":"No"}}],"layout":{"siteskin":false},"category":"google","categoryId":34,"section":"tech","sectionId":35266,"adTargeting":{"postId":1212701,"category":"Google,Social Media","section":"Tech","topic":"YouTube","sponsorName":null,"isSponsoredPost":"No","isSponsoredCategory":"No"}}    </script>
+
+    <script type="text/javascript">
+
+        function getTheCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        if (getTheCookie("tuid") !== "") {
+            dataLayer.push({
+                'tuid': getTheCookie("tuid")
+            });
+        }
+
+    </script>
+	
+    <script src="app.js" type="text/javascript" async=""></script>
+
+  		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thenextweb.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var wlSettings = {"ajaxUrl":"https:\/\/thenextweb.com\/wp-admin\/admin-ajax.php","apiUrl":"https:\/\/thenextweb.com\/wl-api\/","postId":"1212701","jsonld_enabled":""};
+var wordlift = {"version":"3.21.0"};
+var wordliftAnalyticsConfigData = {"entity_uri_dimension":"1","entity_type_dimension":"2"};
+var wordliftAnalyticsEntityData = {"1081545":{"uri":"http:\/\/data.thenextweb.com\/tnw\/entity\/youtube","type":"http:\/\/schema.org\/Thing","label":"YouTube"},"1082085":{"uri":"http:\/\/data.thenextweb.com\/tnw\/entity\/transparency_behavior","type":"http:\/\/schema.org\/Thing","label":"Transparency (behavior)"},"63":{"uri":"http:\/\/data.thenextweb.com\/tnw\/entity\/google","type":"http:\/\/schema.org\/Organization","label":"Google"},"1164724":{"uri":"http:\/\/data.thenextweb.com\/tnw\/entity\/artificial_intelligence_video_games","type":"http:\/\/schema.org\/Thing","label":"Artificial intelligence (video games)"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="bundle.js"></script>
+<script type="text/javascript" src="underscore.js"></script>
+<script type="text/javascript" src="facets.js"></script>
+        <script>
+            (new Image()).src = "//sync.search.spotxchange.com/partner?source=204258";
+        </script>
+            
+
+<script type="text/javascript" id="">function getCookie(b){b+="\x3d";for(var d=document.cookie.split(";"),c=0;c<d.length;c++){for(var a=d[c];" "==a.charAt(0);)a=a.substring(1);if(0==a.indexOf(b))return a.substring(b.length,a.length)}return""}function setCookie(b,d,c){var a=new Date;a.setTime(a.getTime()+864E5*c);a="expires\x3d"+a.toUTCString();document.cookie=0<c?b+"\x3d"+d+"; "+a+"; path\x3d/":b+"\x3d"+d+"; path\x3d/"}
+""==getCookie("tuid")&&""!=google_tag_manager["GTM-MHDDSC"].macro(1)&&void 0!=google_tag_manager["GTM-MHDDSC"].macro(2)&&(setCookie("tuid",google_tag_manager["GTM-MHDDSC"].macro(3),365),setCookie("tnw_morph",google_tag_manager["GTM-MHDDSC"].macro(4),365),dataLayer.push({tuid:"undefined"}));""==getCookie("tnw_morph")&&setCookie("tnw_morph",google_tag_manager["GTM-MHDDSC"].macro(5),365);""!=getCookie("tuid")||""!=google_tag_manager["GTM-MHDDSC"].macro(6)&&void 0!=google_tag_manager["GTM-MHDDSC"].macro(7)?dataLayer.push({user:[{known:!0}]}):dataLayer.push({user:[{known:!1}]});
+""==getCookie("tfv")?(setCookie("tfv","2020-05-03T02:20:17.736-07:00",365),dataLayer.push({user:[{returning:!1}]})):dataLayer.push({user:[{returning:!0}]});</script><script type="text/javascript" id="">(function(){function e(a,d,c){if(c){var b=new Date;b.setTime(b.getTime()+864E5*c);c="; expires\x3d"+b.toGMTString()}else c="";document.cookie=a+"\x3d"+d+c+"; path\x3d/"}function a(a){a+="\x3d";for(var d=document.cookie.split(";"),c=0;c<d.length;c++){for(var b=d[c];" "===b.charAt(0);)b=b.substring(1,b.length);if(0===b.indexOf(a))return b.substring(a.length,b.length)}return null}var f=(new Date).getTime(),g=18E5;if(a("tfv")){dataLayer.push({user:[{first_visit:a("tfv")}]});var h=a("tlv");a("tlv")&&f-
+h>g?(e("tlv",google_tag_manager["GTM-MHDDSC"].macro(10),7300),a("tfv")):a("tlv")&&f-h<g||e("tlv",google_tag_manager["GTM-MHDDSC"].macro(11),7300)}})();</script><script type="text/javascript" id="">function defer(b){window.jQuery?b():setTimeout(function(){defer(b)},200)}function runTest(){$(function(){function b(a){void 0!==c&&c&&window.clearTimeout(c);c=window.setTimeout(e,240)}function e(){var a=$("input#search-input").val();a!==d&&(d=a,a={event:"Search Query Change",eventCategory:"Search",eventAction:"Query",eventLabel:a},dataLayer.push(a))}var c,d="";$("input#search-input").keyup(b)})}defer(runTest);</script><script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];window.__cmp("addEventListener","cmpReady",function(b){__cmp("gdprApplies",void 0,function(a){a||window.dataLayer.push({event:"NoGDPR_apply"})})});</script><script type="text/javascript" id="">(function(a){var b=a.bind(null,"true");a=a.bind(null,"false");if(window.webkitRequestFileSystem)webkitRequestFileSystem(0,0,a,b);else if("MozAppearance"in document.documentElement.style)navigator.serviceWorker?a():b();else if(/constructor/i.test(window.HTMLElement)||window.safari)try{localStorage.length?a():(localStorage.x=1,localStorage.removeItem("x"),a())}catch(c){navigator.cookieEnabled?b():a()}else window.indexedDB||!window.PointerEvent&&!window.MSPointerEvent?a():b()})(function(a){window.dataLayer.push({event:"detected_incognito",
+is_incognito:a})});</script><iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.c63890edc4243ee77048d507b181eeec.html?origin=https%3A%2F%2Fthenextweb.com" title="Twitter settings iframe" style="display: none;" frameborder="0"></iframe>
+<script type="text/javascript" id="">(function(b,a,c){var e=decodeURIComponent;var d="||";var g=";;",f="split",h="length",m="indexOf",k="localStorage",l="_ccmdt";b[c]=b[c]||{};b[c].us={};a=b[k]?b[k][l]||"":(a=a.cookie.match(l+"\x3d([^;]*)"))&&a[1]||"";e=e(a)[f](d);a=e[h];if(0<a)for(;a--;)d=e[a][f]("\x3d"),1<d[h]&&(-1<d[1][m](g)?(b[c].us[d[0]]=d[1][f](g),b[c].us[d[0]].pop()):b[c].us[d[0]]=d[1])})(window,document,"_ml");
+(function(){_ml=window._ml||{};_ml.eid="80370";_ml.informer={callback:function(a,b){"undefined"==typeof dataLayer||_ml.isEmptyObj(_ml.us)||dataLayer.push({event:"Bombora_Informer",Bombora_Topic:_ml.us.tp&&0<_ml.us.tp.length?_ml.us.tp[0]:"",Bombora_Company_Revenue:_ml.us.cr,Bombora_Company_Size:_ml.us.cs,Bombora_Domain:_ml.us.dm,Bombora_Seniority:_ml.us.sn,Bombora_Predictive_Category:_ml.us.pc&&0<_ml.us.pc.length?_ml.us.pc[0]:"",Bombora_Decision_Maker:_ml.us.dcm,Bombora_Functional_Area:_ml.us.fa&&
+0<_ml.us.fa.length?_ml.us.fa[0]:"",Bombora_Install_Data:_ml.us.ins&&0<_ml.us.ins.length?_ml.us.ins[0]:"",Bombora_Professional_Group:_ml.us.pg&&0<_ml.us.pg.length?_ml.us.pg[0]:"",Bombora_Education:_ml.us.edu,Bombora_Industry:_ml.us.ind})},enable:!0};var b=document.getElementsByTagName("script")[0],a=new Date,c=document.createElement("script");c.type="text/javascript";c.async=!0;c.src="https://ml314.com/tag.aspx?"+a.getDate()+a.getMonth()+a.getFullYear();b.parentNode.insertBefore(c,b)})();</script>
+<iframe style="display: none;" src="https://cmp.choice.faktor.io/dist/1.2.21/faktor-portal.html"></iframe><style type="text/css">.csptesti1588497619125783047 { visibility: hidden; }</style><div style="display: none;" class="csptesti1588497619125783047"></div></body></html>

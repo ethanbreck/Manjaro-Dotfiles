@@ -1,0 +1,250 @@
+The Next Web
+
+    News
+    Events
+    Index
+    Spaces
+    Deals
+    Answers
+    TNW X
+
+    News
+    Events▾
+        Online Event: Re:Brand
+        Online Event: Sprint
+        Online Event: Checkout
+        Online Event: Ecosystems
+        Online Event: Transform
+        TNW2020
+    Business ▾
+        Index
+        TNW X
+    AMAs
+    Spaces
+    Terms & Conditions
+    About
+    Advertise
+    Jobs
+    Contact
+
+    Latest
+    Hard Fork
+    Plugged
+    Fundamentals
+    ReadMe
+    Growth Quarters
+    Neural
+
+    Have a cookie
+
+    TNW uses cookies to personalize content and ads to make our site easier for you to use. We do also share that information with third parties for advertising & analytics.
+    Got it! or More info
+
+Sections
+
+    Latest
+    Insights
+    Plugged
+    Fundamentals
+    ReadMe
+    Growth Quarters
+    Neural
+
+About TNW
+
+    About
+    Advertise
+    Jobs
+    Contact
+    Terms & Conditions
+
+TNW Sites
+
+    News
+    TNW 2020
+    TNW X
+    Index
+    Spaces
+    Deals
+    Answers
+
+Navigate the new normal for your industry at TNW Couch Conferences
+‘YouTube recommendations are toxic,’ says dev who worked on the algorithm
+
+by Már Másson Maack — 10 months ago in Google
+‘YouTube recommendations are toxic,’ says dev who worked on the algorithm
+
+    68
+    shares
+
+Where else could you go for you daily dose of how-tos, like this one about draining washing machines , or 15-minute compilations of cats vomiting ? This is what YouTube was made for, and it’s beautiful.
+
+At the same time, as YouTube has become  the place for videos on the web, it’s led to a raft of new problems . Content moderation is a constant struggle and YouTube can do better, but there will likely always be some amount of offensive videos that people can seek out. However, the real issue is the videos we don’t seek out: YouTube’s recommendations.
+TNW Couch Conferences
+
+Join industry leaders to define new strategies for an uncertain future
+REGISTER NOW
+
+Recommendations are a waste of time
+
+You can see the recommendations in the “Up next” list on the right of the screen and they’ll also play automatically when you’ve got autoplay enabled.
+
+These are the videos you should be wary of, according to Guillaume Chaslot. He’s the founder of a project to demand greater transparency from online platforms called AlgoTransparency , and used to work at Google on YouTube’s recommendation algorithm. H e says the motivations behind it are deeply flawed as it isn’t really about what the viewer wants.
+Credit: DisinfoLab Chaslot speaking at the DisinfoLab Conference in Brussels
+
+“It isn’t inherently awful that YouTube uses AI to recommend video for you, because if the AI is well tuned it can help you get what you want. This would be amazing,” Chaslot told TNW. “But the problem is that the AI isn’t built to help you get what you want — it’s built to get you addicted to YouTube. Recommendations were designed to waste your time.”
+
+Chaslot explains that the metric the algorithm uses to determine a ‘successful’ recommendations is watch time. This might be great for a company trying to sell ads, but doesn’t necessarily reflect what the user wants — and has grave side-effects.
+Engaging content gets recommended, which is bad
+
+During his talk at the DisinfoLab Conference last month, Chaslot noted that divisive and sensational content is often recommended widely: conspiracy theories, fake news, flat-Earther videos, for example. Basically, the closer it stays the edge of what’s allowed under YouTube’s policy, the more engagement it gets. Google completely disagrees with Chaslot, but we’ll get to that later.
+
+The basic structure of YouTube’s recommendation algorithm might’ve worked fine for its core types of content — like cat videos, gaming, and music. But as YouTube becomes more central in people’s information and news consumption, Chaslot worries recommendations will push people further to extremes — whether they want it or not — just because it’s in YouTube’s interest to keep us watching for as long as possible.
+Chaslot’s take on Facebook’s natural engagement pattern: “The best way to use social media is to surf the policy line.”
+
+Mark Zuckerberg admitted last year that borderline content was more engaging . Google did not want to answer TNW’s questions as to whether the same was true for YouTube, but the company’s spokesperson said in a discussion at the DisinfoLab conference that the company’s studies showed people actually engaged more with quality content. Chaslot says this is something the big tech companies will have to debate between themselves, but based on his own experience, he’s more inclined to believe Zuckerberg at this point.
+
+“We’ve got to realize that YouTube recommendations are toxic and it perverts civic discussion,” says Chaslot. “Right now the incentive is to create this type of borderline content that’s very engaging, but not forbidden.” Basically, the more outlandish content you make, the more likely it’ll keep people watching, which in turn will make it more likely to be recommended by the algorithm — which results in greater revenue for the creator, and for YouTube.
+
+But what about actual, concrete examples of problematic recommendations?
+When recommendations go wrong
+
+In Chaslot’s mind, it should be enough to point out that the algorithm’s incentives are completely broken (i.e. watch time doesn’t equal quality) as an example of why it’s bad for us as a society. But to actually show its effects, he made the AlgoTransparency tool after he left Google. The tool is meant to give people a better overview of what’s actually being recommended on YouTube.
+
+Basically, it tries to find out which videos are shared by most channels to provide an overview you can’t get through your personal browsing. Chaslot points out that most often, the top recommended videos are innocuous, but every now and again, problematic videos pop up.
+
+    This video funded by the Russian government was recommended more than half a million times from more than 236 different channels. https://t.co/aRNUx2WIOm
+
+    2/
+
+    — Guillaume Chaslot (@gchaslot) April 26, 2019
+
+When the Mueller report detailing whether there was any collusion between Russia and Donald Trump’s presidential campaign was released, Chaslot noticed that the analysis recommended from the most channels was a video from RT — a state-sponsored Russian propaganda outlet.
+
+That means that if Chaslot is correct, YouTube’s algorithm amplified a video explaining the finding on possible Russian collusion made by… Russia. The video upholds what could be considered a Kremlin-friendly narrative and slams mainstream media. Naturally, Chaslot’s claim caught the attention of the media and was covered widely .
+
+Chaslot says that while other Mueller-related videos got more total recommendations, the RT video stood out because it was recommended like crazy for two days and then nothing — despite having relatively few views.
+
+“It was really strange to see this amount of channels that recommended this video, compared to how many views it had,” says Chaslot “The weird thing is that nobody really understands why this happened.”
+
+Now it’s important to get Google’s side of things. Google has completely disowned AlgoTransparency’s methodology (which you can find here ) and told TNW it doesn’t accurately reflect how recommendations work — which are based on surveys, likes, dislikes, and shares.
+
+    As with most assertions made by AlgoTransparency, we have been unable to reproduce the results here. We’ve designed our systems to help ensure that content from more authoritative sources is surfaced prominently in search results and watch next recommendations in certain contexts, including when a viewer is watching news related content on YouTube.
+
+Chaslot says that if there are discrepancies with his results, he’d love to know what they are. And the best way to do that, is for Google to simply share which videos YouTube is recommending to people. But the company hasn’t revealed more information on the matter.
+
+Chaslot also points out that it seems his methods manage to highlight similar faults in the algorithm as Google does. Earlier this year, a Google software engineer gave a talk about correcting biases in YouTube and one of the videos used as an example of that had been flagged by AlgoTransparency before. So something about his approach seems to be working, but we won’t know until Google becomes more transparent about recommendations.
+Credit: AlgoTransparency From AlgoTransparency’s website, showing part of its methodology
+What should we do about it?
+
+YouTube doesn’t really provide any options now for users to control the recommendations they receive. Sure you can block some channels, but Chaslot points out that the algorithm might still push you towards similar channels as you’ve already “shown interest” in this type of content. So what can you do?
+
+“The best short-term solution is to simply delete the recommendation function. I really don’t think it’s useful at all to the user,” Chaslot explains. “If YouTube wants to keep recommendations, it could stick to the curated ones done via email — where humans make sure nothing crazy gets on there — or just make them stick to channels you’ve subscribed to.”
+
+Chaslot also acknowledges that most people — himself included — are too curious not to click borderline content, so he uses a Chrome extension called Nudge that removes addictive online features like Facebook’s News feed and YouTube recommendations. “I still click on stupid thing when I see them, so the best thing to is to just remove them.”
+Credit: Nudge Nudge removes all the addictive stuff from social media sites… which is pretty much everything.
+
+All of this is just to treat the symptoms, not the cause. Chaslot believes the real focus needs to be on long term solutions. At the moment, users are fighting against supercomputers to try to protect their free will, but it’s a losing battle with the current tools.
+
+That’s why Chaslot is convinced the only way forward is to provide proper transparency and give users real control: “In the long term, we need people to be in control of the AI, instead of AI controlling the users.”
+
+Read next: Europol is developing a ‘game’ to teach officers how to trace cryptocurrency
+Corona coverage
+
+Read our daily coverage on how the tech industry is responding to the coronavirus and subscribe to our weekly newsletter Coronavirus in Context .
+
+For tips and tricks on working remotely, check out our Growth Quarters articles here or follow us on Twitter .
+Tech YouTube YouTube Transparency (behavior) Google Artificial intelligence (video games)
+
+    Share on Facebook (5)
+    Share on Twitter (49)
+
+Most popular
+
+    1
+    Facebook's teaching AI to lie like a human
+        Tristan Greene
+        3 days ago
+    2
+    Lenovo made a new ThinkPad keyboard for your desktop - mouse nub and all
+        Napier Lopez
+        3 days ago
+    3
+    This AI creates entire songs complete with music, lyrics, and vocals
+        Tristan Greene
+        2 days ago
+    4
+    Microsoft stock pumps after it sees two years of digital transformation in two months
+        David Canellis
+        2 days ago
+    5
+    Zoom played itself when it lied about having 300M daily active users
+        Mix
+        2 days ago
+
+Never miss out
+
+Stay tuned with our weekly recap of what’s hot & cool by our CEO Boris .
+T h a n k   y o u !
+Do it
+
+Join over 260,000 subscribers!
+Latest
+
+    1
+    Japanese aquarium asks you to FaceTime its frightened eels
+        Rachel Kaser
+        1 day ago
+    2
+    Streaming service Deezer built an AI to catch the explicit lyrics human censors miss
+        Thomas Macaulay
+        1 day ago
+    3
+    Tesla stock crashes after Elon Musk tweets: 'Tesla stock too high imo'
+        David Canellis
+        1 day ago
+    4
+    Researchers tested 47 old drugs that might treat the coronavirus — these were the results
+        The Conversation
+        1 day ago
+    5
+    Tesla pulls a slick sales move in China, lowers Model 3 price to fit new subsidy limit
+        Matthew Beedham
+        1 day ago
+
+    Events
+    About
+    Advertise
+    Jobs
+    Contact
+
+The Next Web © 2006–2020 The Next Web B.V. Made with ♥ in Amsterdam. Powered by StackPath
+Stay tuned
+Treat yourself
+
+Sit back and let the hottest tech news come to you by the magic of electronic mail.
+T h a n k   y o u !
+Sign up
+
+Prefer to get the news as it happens? Follow us on social media.
+
+    Twitter
+
+    1.76M followers
+    Facebook
+
+    1M likes
+
+Help us out
+Who are you?
+
+Got two minutes to spare? We'd love to know a bit more about our readers.
+
+Start!
+
+All data collected in the survey is anonymous.
+The Next Web
+↑ ↓ Navigate up/down
+Enter Go to article
+/ Search new term
+Esc Close search

@@ -1,0 +1,402 @@
+
+/* =========================================== */
+/*              Item Page                      */
+/* =========================================== */
+
+img.collectionContextIcon60 { float: right; padding: 3px; background: white; border: 1px solid #aaa; margin: 0 0 5px 8px;
+-moz-box-shadow: -2px  2px 7px #aaa; -webkit-box-shadow: -2px 2px 7px #aaa; box-shadow: -2px 2px 7px #aaa;
+ }
+
+
+
+/* ------------------------------------------- */
+/*              Item Display                   */
+/* ------------------------------------------- */
+
+h1.itemTitle {
+    color:#001A57;
+    margin-bottom:10px;
+    margin-top:0px;
+    border-bottom:0px solid #dcdad4;
+}
+
+	/* Shrink longer titles */
+	h1.itemTitle.title-100 { font-size: 25px; }
+	h1.itemTitle.title-200 { font-size: 22px; }
+	h1.itemTitle.title-300 { font-size: 20px; }
+	h1.itemTitle.title-400 { font-size: 18px; }		
+		
+.translatedTitle {
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+
+ul.itemOptionsViewer { list-style: none; padding: 0; margin: 0;}
+ul.itemOptionsViewer li { display: inline; margin: 0; padding: 0; }
+
+ul#itemOptionsMain { list-style: none; padding: 0; margin: 0;}
+ul#itemOptionsMain li {
+display: inline; margin: 0; padding: 0;
+}
+
+span.btnOptionsArrow { width: 16px; height: 16px; margin-left: 6px; }
+
+ul#itemOptionsSecondary {
+    background:#ffffff;
+    padding:5px; 
+    border: 1px solid #dcdad4;  
+    -moz-box-shadow: 0 0 5px rgba(100, 100, 100, 0.5); -webkit-box-shadow: 0 0 5px rgba(100, 100, 100, 0.5); box-shadow: 0 0 5px rgba(100, 100, 100, 0.5);
+    z-index:100;
+    position:absolute;
+    top:42px;
+    left:-8px; /* override inline for specific resource templates */
+    list-style-type:none;
+    line-height:20px;
+}
+
+ul#itemOptionsSecondary a { font-size:14px; color:#a5a5a5; }
+ul#itemOptionsSecondary a:hover { color:#336699; }
+
+ul#itemOptionsSecondary li { margin-left: 10px; margin-bottom: 3px;}
+
+ul#itemOptionsSecondary li span.st_sharethis span.stButton { margin-left: 0;}
+ul#itemOptionsSecondary li span.st_sharethis span.stButton span.sharethis { font-size: 14px; color:#a5a5a5; font-family: inherit !important; padding-left: 22px; }
+ul#itemOptionsSecondary li span.st_sharethis span.stButton span.sharethis:hover { font-size: 14px;  color:#336699; text-decoration: underline; }
+
+
+#menu-arrow {
+    top:-15px;
+    left: 200px; /* override inline for specific resource templates */
+    position:absolute;
+}
+
+#optionClose {
+    background:#fff;
+    border:none;
+    float:right;
+    cursor:pointer;
+}
+
+.options button{
+    border:none;
+    line-height:5px;
+}
+
+/* ------------------------------------------- */
+/*              Options Display                */
+/* ------------------------------------------- */
+
+div.options { float: left; margin-bottom: 10px;}
+div.options div { float: left;}
+
+img.buttonIcon { margin-right: 6px; vertical-align: top; margin-top: 2px; max-height: 13px; }
+
+.buttonsetLabel { color: #555; font-size: 15px; margin-right: 8px;}
+
+div.pageComponentNav { float: right; }
+
+/* ------------------------------------------- */
+/*              Embed Code                     */
+/* ------------------------------------------- */
+
+#embed-code { display: none; }
+#embed-code-copyable { width: 400px; padding: 5px; }
+.embed-help { margin-top:10px; float: right; }
+/* ------------------------------------------- */
+/*              Downloads                      */
+/* ------------------------------------------- */
+
+#download-instructions { display: none; }
+
+
+/* ------------------------------------------- */
+/*              Item Viewer                    */
+/* ------------------------------------------- */
+
+img#largeImage { max-width: 940px;}
+div.options div.dimensions { font-size: 11px; color: #555; margin-bottom: 5px;}
+#medImage, #thmImage { padding-top: 20px;}
+
+
+
+/* ------------------------------------------- */
+/*   Galleria Overrides for Multi-Image        */
+/* ------------------------------------------- */
+
+/* Galleria Overrides for Multipage Item */
+
+div.galleria-container { height: 800px; text-align: center;}
+div.galleria-stage { border: none;}
+div.galleria-info { display: none !important; visibility: hidden !important;}
+
+div.galleria-stage { bottom: 130px; border-top: 1px solid #ccc; padding-top: 10px;} /* height of thumb + 10. */
+div.galleria-thumbnails-container {height: 100px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 10px 0;}
+div.galleria-thumbnails-list {}
+
+div.galleria-thumbnails { height: 100px;}
+div.galleria-thumbnails div.galleria-image { height: 100px;}
+
+div.galleria-thumbnails div.galleria-image img {
+ opacity: 0.8 !important; -moz-opacity: 0.8 !important; -webkit-opacity: 0.8 !important; }
+
+
+div.galleria-thumbnails div.galleria-image img:hover {
+	opacity: 1 !important; -moz-opacity: 1 !important; -webkit-opacity: 1 !important;
+}
+
+div.galleria-thumb-nav-left, div.galleria-thumb-nav-right {
+height: 100%;
+}
+
+
+/* Per collection styles (resource template doesn't currently pull in collection.css) */
+
+#page.dukengineer div.galleria-container div.galleria-stage { background: #3a3a3a !important; }
+
+
+
+/* ------------------------------------------- */
+/*            Book  (Bookreader)               */
+/* ------------------------------------------- */
+
+iframe.bookReader { border: 1px solid #ccc;}
+
+/* ------------------------------------------- */
+/*            Document (PDF)                   */
+/* ------------------------------------------- */
+
+div.pdfThumbArea { padding: 10px 0; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+img.buttonImage, span.buttonText { vertical-align: middle; }
+
+
+/* ------------------------------------------- */
+/*   Diva.js Document Viewer Custom            */
+/* ------------------------------------------- */
+
+div.diva-outer { background-color: #111;}
+
+.diva-tools .diva-tools-right .diva-button, .diva-tools .diva-tools-right .diva-grid-icon, .diva-tools .diva-tools-right .diva-link-icon, .diva-outer, .ui-slider .ui-slider-handle.active, #diva-canvas-tools .action-buttons a, #diva-map-viewbox, #diva-wrapper .button { border: 1px solid #999999; } /* override carolina blue border */
+
+
+.diva-tools.diva-fullscreen-tools { width: 275px; }
+
+.diva-goto-form input[type="submit"] { display: none; }
+
+.diva-next-icon, .diva-prev-icon { float: left; }
+.diva-next-icon { background-image:url('../images/icons/diva-arrow-down.png'); margin-right: 8px; }
+.diva-prev-icon { background-image:url('../images/icons/diva-arrow-up.png');  }
+
+.diva-buttons-label, .diva-page-label { font-size: 10px; text-transform: uppercase; padding: 0; color: #999;}
+.diva-page-label { font-size: 13px; }
+
+.diva-tools .diva-tools-left .diva-buttons-label { padding-left: 0; clear:none; }
+
+/*
+.diva-tools-bottom { vertical-align: middle; padding: 11px 0 5px 0; }
+.diva-fullscreen-tools .diva-tools-bottom { clear: both; }
+
+.diva-tools-download a { background: url('../images/icons/diva-download-single-16x16.png') no-repeat; padding-left: 20px; text-transform: uppercase; color: #999; font-size: 13px; min-height: 16px;  }
+*/
+
+.diva-canvas-icon {
+  background: url('../images/icons/diva-canvas.png') no-repeat;
+  background-position: -25px center;
+}
+.diva-canvas-icon:hover {
+  background-position: -0px center;
+}
+.diva-canvas-icon.new {
+  background-position: -25px center;
+}
+.diva-canvas-icon.new:hover {
+  background-position: -0px center;
+}
+
+.diva-download-icon {
+  background: url('../images/icons/diva-download.png') no-repeat;
+  background-position: -25px center;
+}
+.diva-download-icon:hover {
+  background-position: -0px center;
+}
+
+#diva-fullscreen-textpane-options { 
+  position: fixed;
+  z-index: 500;
+  background:rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 200px;
+  padding: 10px;
+  height: 20px;
+  right: 20px;
+  bottom: 460px;
+	
+}
+#diva-fullscreen-textpane-options a { 
+	color: #aaa;
+	
+}
+
+#diva-fullscreen-textpane {
+  position: fixed;
+  z-index: 500;
+  background:rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 400px;
+  padding: 20px;
+  height: 400px;
+  right: 20px;
+  bottom: 20px;
+  overflow-y: scroll;
+}
+
+#diva-fullscreen-textpane::-webkit-scrollbar {
+      width: 15px;
+} /* this targets the default scrollbar (compulsory) */
+
+#diva-fullscreen-textpane::-webkit-scrollbar-track {
+      background-color: #333;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+#diva-fullscreen-textpane::-webkit-scrollbar-thumb {
+      /*background-color: rgba(0, 0, 0, 0.2); */
+		background-color: #666;
+} /* this will style the thumb, ignoring the track */
+ 
+#diva-fullscreen-textpane::-webkit-scrollbar-button {
+      background-color: #7c2929;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+#diva-fullscreen-textpane::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+#diva-fullscreen-textpane h2 {
+	color: #ccc;
+	font-family: 'Roboto Condensed',Arial,sans-serif; 
+}
+
+/* ------------------------------------------- */
+/*              Metadata                       */
+/* ------------------------------------------- */
+
+
+#itemInfo { background: none; border: none; padding: none;}
+
+
+
+ul.metadataSection {  font-size: 12px; list-style: none; padding: 0; color: #555; margin-left: 10px;}
+	ul.metadataSection li { padding: 10px 0 10px 0; margin-left: 0; clear: both; }
+		ul.metadataSection li div.metadataLabel {  font-weight: bold; }
+		ul.metadataSection li div.metadataValue { }
+		
+
+		
+/* ----- Specific fields ----- */
+
+
+
+ul.metadataDescription { border-bottom: 1px dotted #988675; border-top: 1px dotted #988675; padding: 10px;  
+background: #f8f8f8; margin: 0 0 10px 0; font-size: 13px; line-height: 1.3em;
+}
+
+.metadataDescription .metadataValue { margin-top: 8px; }
+
+		
+		
+/* ------------------------------------------- */
+/*              Audio & Video                  */
+/* ------------------------------------------- */
+
+a.downloadHint { color: #999; }
+a.downloadHint:hover { color: #336699; }
+.mediaOptions, .mediaOptions a { color: #999;  }
+.mediaOptions { margin-top: 10px; margin-bottom: 0;}
+
+.mediaOptions span { margin-right: 10px; }
+
+a.playlist-part {
+  
+}
+
+a.playlist-part.now-playing {
+  font-weight: bold;
+  border-bottom: 3px solid #a1b70d;
+  text-decoration: none !important;
+}
+
+a.embedLink {
+	background-image:url('../images/icons/embed-33pct-14px.png'); 
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-left: 18px;
+}
+	/* a.embedLink:hover { background-image:url('../images/icons/embed-blue-14px.png'); } */
+
+
+/* ------------------------------------------- */
+/*              Sidebar                        */
+/* ------------------------------------------- */
+
+div.shareLinks {margin-bottom: 20px;}
+
+p.collScopeNote { font-size: 11px; margin-top: 10px;}
+a.truncate_more_link { font-style: italic;}
+
+/* ------------------------------------------- */
+/*              Loading Box                     */
+/* ------------------------------------------- */
+#progressText {
+    -webkit-border-radius: 10px;
+/*    background-color: rgba(0,0,0,.7);*/
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 80px;
+    left: 160px;
+    line-height: 80px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    top: 75px;
+    width: 200px;
+    background: #000 url('../images/classic-loader.gif') no-repeat 75% 50%;
+    z-index:1000;
+}
+
+/* ------------------------------------------- */
+/*              List Display                    */
+/* ------------------------------------------- */
+
+img.videoThumb { width: 100px;}
+div.iTunesOptionBar { margin-bottom: 20px;}
+div.iTunesColumnHeading{ font-size: 14px; border-bottom: 1px solid #aaa;}
+div.even{ background-color: #f2f2f2;}
+div.iTunesTracks { font-size: 12px;}
+div.iTunesTracks div { padding: 2px 0;}
+div.trackNumber { text-align: right;}
+
+div.subItemInfo { border-top: 1px dotted #988675; padding-top: 8px; padding-bottom: 8px;}
+div.subItemInfo div.subItemTitle { color: #001A57; }
+
+
+/* ------------------------------------------- */
+/*              Interview Table                */
+/* ------------------------------------------- */
+
+div.categoryTopImage { background: none repeat scroll 0 0 #F8F8F8;
+    border-bottom: 1px dotted #988675;
+    border-top: 1px dotted #988675;
+    color: #988675;
+    margin: 0 0 10px;
+    padding: 10px;
+	text-align: center;
+}
+table.interviewTable { width: 100%; margin-top: 10px;}
+table.interviewTable thead { text-align: left;}
+table.interviewTable tr { border-bottom: 1px solid #ccc;}
+table.interviewTable td { padding: 0.5em 1em 0.5em 0; }
+
+
+
