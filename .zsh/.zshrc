@@ -1,22 +1,15 @@
 
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.zsh/.zsh_history
+HISTFILE=$ZDOTDIR/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt beep
 bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
 
-source ~/.zsh/.zsh_alias
 
-source /usr/share/nvm/init-nvm.sh
+source $ZDOTDIR/.zsh_alias
+source $ZDOTDIR/.zsh_alias_vps
 
-zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
-zstyle :compinstall filename '/home/ekb/.zshenv'
-
-autoload -Uz compinit
-compinit
 # End of lines added by compinstall
 
 # If you come from bash you might have to change your $PATH.
@@ -63,7 +56,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -89,7 +82,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,4 +107,3 @@ export LANG=en_US.UTF-8
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-

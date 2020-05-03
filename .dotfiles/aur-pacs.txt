@@ -1,0 +1,4 @@
+oh-my-zsh-git
+slack-desktop
+zoom
+zotero

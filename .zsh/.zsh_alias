@@ -1,5 +1,3 @@
-alias e="nvim"
-
 alias youtube-dlmp3='youtube-dl --extract-audio --audio-format mp3'
 
 alias update='sudo pacman -Syu & pacaur -Syu'
@@ -10,6 +8,8 @@ alias txtConverter='soffice --headless --convert-to'
 
 alias batch-ytdl='youtube-dl -f best -a'
 
-alias vpsssh='ssh ekb@ServerIP'
+# Below are the VPS command guide, but they are sourced in a private .zsh_alias_vps file
 
-alias vpsping='ping ServerIP'
+# alias vpsssh='ssh ekb@ServerIP'
+
+# alias vpsping='ping ServerIP'
