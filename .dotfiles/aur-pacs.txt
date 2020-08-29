@@ -2,3 +2,5 @@ oh-my-zsh-git
 slack-desktop
 zoom
 zotero
+jdownloader2
+powershell

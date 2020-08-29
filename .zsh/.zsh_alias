@@ -1,4 +1,4 @@
-alias youtube-dlmp3='youtube-dl --extract-audio --audio-format mp3'
+alias youtube-dl-audio='youtube-dl -f bestaudio --extract-audio --embed-thumbnail --add-metadata --audio-format m4a'
 
 alias update='sudo pacman -Syu & pacaur -Syu'
 
@@ -7,6 +7,24 @@ alias portfolio='cd ~/Documents/portfolio'
 alias txtConverter='soffice --headless --convert-to'
 
 alias batch-ytdl='youtube-dl -f best -a'
+
+alias powershell='pwsh'
+
+alias calender='/usr/bin/korganizer &'
+
+alias music='cd $HOME/Music && ranger'
+
+alias ssh-start='eval "$(ssh-agent)"'
+
+alias updatemirrors='sudo pacman-mirrors -f 0'
+
+alias shapegame='cd /home/ekb/apps/Games/shapezio-linux && ./play.sh'
+
+alias updatemirrors='sudo pacman-mirrors -i'
+
+alias weather='curl wttr.in'
+
+alias discord='cd /home/ekb/Documents/Discord && ./Discord &'
 
 # Below are the VPS command guide, but they are sourced in a private .zsh_alias_vps file
 

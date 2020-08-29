@@ -23,3 +23,11 @@ python-gobject
 gobject-introspection 
 libappindicator-gtk3
 jre-openjdk
+mpv
+vlc
+obs-studio
+whois
+handbrake
+atomicparsley
+kgpg
+

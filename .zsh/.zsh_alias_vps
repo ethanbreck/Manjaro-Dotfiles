@@ -1,0 +1,3 @@
+alias vpsssh='ssh ekb@45.32.133.69'
+
+alias vpsping='ping 45.32.133.69'
