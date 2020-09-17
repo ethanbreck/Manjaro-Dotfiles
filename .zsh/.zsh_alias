@@ -1,4 +1,4 @@
-alias youtube-dl-audio='youtube-dl -f bestaudio --extract-audio --embed-thumbnail --add-metadata --audio-format m4a'
+alias youtube-dl-audio='youtube-dl -f bestaudio --extract-audio --audio-format mp3'
 
 alias update='sudo pacman -Syu & pacaur -Syu'
 
