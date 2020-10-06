@@ -2,8 +2,14 @@
 sudo pacman-db-upgrade && sync
 sudo systemctl enable fstrim.timer
 
-/bin/bash ~/.dotfiles/appInstaller.sh
+sudo pacman -Syyu
+sudo pacman -S --needed - < packages.txt
 
-echo "Install overGrive from here: https://www.thefanclub.co.za/overgrive/installation-instructions-arch-linux"
+git clone https://aur.archlinux.org/pacaur.git
+cd pacaur/
+makepkg -si
 
-jdownloader
+cd .. 
+
+pacaur -Syyu
+pacaur -S --needed - <aur-pacs.txt

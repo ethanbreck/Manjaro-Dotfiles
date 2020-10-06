@@ -1,3 +1,4 @@
+base-devel
 rhythmbox
 libreoffice-still
 keepassxc
@@ -30,4 +31,12 @@ whois
 handbrake
 atomicparsley
 kgpg
-
+p7zip 
+p7zip-plugins 
+unrar 
+tar 
+rsync
+aspell-en 
+libmythes 
+mythes-en 
+languagetool
