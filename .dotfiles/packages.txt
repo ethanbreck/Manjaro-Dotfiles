@@ -1,4 +1,5 @@
 base-devel
+dep
 rhythmbox
 libreoffice-still
 keepassxc
@@ -20,9 +21,6 @@ python3
 python-oauth2client 
 python-pyinotify 
 python-pip 
-python-gobject 
-gobject-introspection 
-libappindicator-gtk3
 jre-openjdk
 mpv
 vlc
@@ -31,12 +29,7 @@ whois
 handbrake
 atomicparsley
 kgpg
-p7zip 
-p7zip-plugins 
-unrar 
-tar 
-rsync
-aspell-en 
-libmythes 
-mythes-en 
-languagetool
+keepassxc
+rhythmbox
+neofetch
+croc
